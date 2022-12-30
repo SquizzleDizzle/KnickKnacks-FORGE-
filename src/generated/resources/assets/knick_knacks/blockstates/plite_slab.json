@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "knick_knacks:block/plite_slab"
+    },
+    "type=double": {
+      "model": "knick_knacks:block/plite_planks"
+    },
+    "type=top": {
+      "model": "knick_knacks:block/plite_slab_top"
+    }
+  }
+}

@@ -1,0 +1,7 @@
+{
+  "parent": "minecraft:block/cube_column",
+  "textures": {
+    "end": "knick_knacks:block/polished_end_stone",
+    "side": "knick_knacks:block/chiseled_end_stone"
+  }
+}

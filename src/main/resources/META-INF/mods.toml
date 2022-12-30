@@ -1,0 +1,25 @@
+modLoader = "javafml"
+loaderVersion = "[43,)"
+license = "All Rights Reserved"
+[[mods]]
+modId = "knick_knacks"
+version = "1.0.0"
+displayName = "Knick Knacks"
+displayURL="http://example.com/"
+logoFile="KnickKnacks.png"
+authors="Squizzle Dizzle"
+description = '''
+Knick Knacks is a mod that aims to add my miscellaneous ideas into one mod. These ideas are what I think would add more fun and adventure to the game. All features are toggleable in case you don't like any of the features.
+'''
+[[dependencies.knick_knacks]]
+modId = "forge"
+mandatory = true
+versionRange = "[43,)"
+ordering = "NONE"
+side = "BOTH"
+[[dependencies.knick_knacks]]
+modId = "minecraft"
+mandatory = true
+versionRange = "[1.19.2,1.20)"
+ordering = "NONE"
+side = "BOTH"

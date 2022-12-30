@@ -1,0 +1,5 @@
+// 1.19.2	2022-12-28T13:16:28.0561843	Tags for minecraft:block
+986c221f3db7728e41ca3b030840cff07f98ebad data/knick_knacks/tags/blocks/end_grass_placeable.json
+3e27900293d99afd4a993eea8f37850562863677 data/minecraft/tags/blocks/leaves.json
+ac707904b5e0f41056bd8954308b1ff86f53c76b data/minecraft/tags/blocks/mineable/pickaxe.json
+0499461f5af10f175a92e5e0b4ed297cfb1cdb62 data/minecraft/tags/blocks/walls.json

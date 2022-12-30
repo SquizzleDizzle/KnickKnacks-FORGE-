@@ -1,0 +1,8 @@
+{
+  "parent": "block/door_top_right_open",
+  "textures": {
+    "bottom": "knick_knacks:block/plite_door_bottom",
+    "middle": "knick_knacks:block/plite_door_middle",
+    "top": "knick_knacks:block/plite_door_top"
+  }
+}

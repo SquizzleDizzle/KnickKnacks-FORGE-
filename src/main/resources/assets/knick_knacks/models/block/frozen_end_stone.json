@@ -1,0 +1,9 @@
+{
+    "parent": "minecraft:block/cube_bottom_top",
+    "textures": {
+        "top": "knick_knacks:block/frozen_end_stone_top",
+        "bottom": "minecraft:block/end_stone",
+        "side": "knick_knacks:block/frozen_end_stone",
+        "particle": "minecraft:block/end_stone"
+    }
+}

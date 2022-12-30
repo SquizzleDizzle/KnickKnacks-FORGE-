@@ -1,0 +1,4 @@
+// 1.19.2	2022-12-28T15:10:14.1946399	Tags for minecraft:worldgen/biome
+480bd3cca8b492f49beb130c4776167668995688 data/forge/tags/worldgen/biome/is_cold/end.json
+dd12bbe94ad4103802df067d15350a49d052eb10 data/minecraft/tags/worldgen/biome/has_structure/end_city.json
+381932ad2c71a1ad7a2b0acd6bce7288eac4d887 data/minecraft/tags/worldgen/biome/is_end.json

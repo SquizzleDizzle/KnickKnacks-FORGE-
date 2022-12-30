@@ -1,0 +1,16 @@
+{
+  "variants": {
+    "axis=x": {
+      "model": "knick_knacks:block/plite_wood",
+      "x": 90,
+      "y": 90
+    },
+    "axis=y": {
+      "model": "knick_knacks:block/plite_wood"
+    },
+    "axis=z": {
+      "model": "knick_knacks:block/plite_wood",
+      "x": 90
+    }
+  }
+}

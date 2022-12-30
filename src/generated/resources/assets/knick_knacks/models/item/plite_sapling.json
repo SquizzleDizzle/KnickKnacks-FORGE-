@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:item/handheld",
+  "textures": {
+    "layer0": "knick_knacks:block/plite_sapling"
+  }
+}

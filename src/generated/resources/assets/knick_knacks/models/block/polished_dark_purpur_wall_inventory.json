@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/wall_inventory",
+  "textures": {
+    "wall": "knick_knacks:block/polished_dark_purpur"
+  }
+}

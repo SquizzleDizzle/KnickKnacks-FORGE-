@@ -1,0 +1,8 @@
+{
+  "parent": "minecraft:block/outer_stairs",
+  "textures": {
+    "bottom": "knick_knacks:block/plite_planks",
+    "side": "knick_knacks:block/plite_planks",
+    "top": "knick_knacks:block/plite_planks"
+  }
+}

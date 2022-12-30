@@ -1,0 +1,16 @@
+{
+  "variants": {
+    "axis=x": {
+      "model": "knick_knacks:block/stripped_plite_log_horizontal",
+      "x": 90,
+      "y": 90
+    },
+    "axis=y": {
+      "model": "knick_knacks:block/stripped_plite_log"
+    },
+    "axis=z": {
+      "model": "knick_knacks:block/stripped_plite_log_horizontal",
+      "x": 90
+    }
+  }
+}

@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/button",
+  "textures": {
+    "texture": "knick_knacks:block/plite_planks"
+  }
+}

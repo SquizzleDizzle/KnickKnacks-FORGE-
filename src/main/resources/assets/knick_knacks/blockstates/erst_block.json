@@ -1,0 +1,11 @@
+{
+  "variants": {
+    "vertical_direction=down": {
+      "model": "knick_knacks:block/erst_block",
+      "x": 180
+    },
+    "vertical_direction=up": {
+      "model": "knick_knacks:block/erst_block"
+    }
+  }
+}

@@ -1,0 +1,30 @@
+{
+  "variants": {
+    "facing=down": {
+      "model": "knick_knacks:block/erst",
+      "x": 180
+    },
+    "facing=east": {
+      "model": "knick_knacks:block/erst",
+      "x": 90,
+      "y": 90
+    },
+    "facing=north": {
+      "model": "knick_knacks:block/erst",
+      "x": 90
+    },
+    "facing=south": {
+      "model": "knick_knacks:block/erst",
+      "x": 90,
+      "y": 180
+    },
+    "facing=up": {
+      "model": "knick_knacks:block/erst"
+    },
+    "facing=west": {
+      "model": "knick_knacks:block/erst",
+      "x": 90,
+      "y": 270
+    }
+  }
+}

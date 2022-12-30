@@ -1,0 +1,9 @@
+{
+    "parent": "minecraft:block/cube_bottom_top",
+    "textures": {
+        "top": "knick_knacks:block/smooth_end_sandstone",
+        "bottom": "knick_knacks:block/end_sandstone_bottom",
+        "side": "knick_knacks:block/end_sandstone",
+        "particle": "knick_knacks:block/end_sandstone"
+    }
+}
