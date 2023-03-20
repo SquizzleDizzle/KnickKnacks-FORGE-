@@ -23,6 +23,8 @@ public class KnickKnacks {
         KnickKnacksBlockRegistry.register(eventBus);
         KnickKnacksItemRegistry.register(eventBus);
         KnickKnacksEntityRegistry.register(eventBus);
+        KnickKnacksFluidRegistry.register(eventBus);
+        KnickKnacksFluidTypeRegistry.register(eventBus);
 
         KnickKnacksFeatureRegistry.register(eventBus);
         KnickKnacksPlaceFeatureRegistry.register(eventBus);

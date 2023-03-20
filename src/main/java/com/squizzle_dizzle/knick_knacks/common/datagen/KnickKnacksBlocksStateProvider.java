@@ -18,10 +18,6 @@ import net.minecraftforge.registries.RegistryObject;
 import java.util.function.Function;
 
 import static com.squizzle_dizzle.knick_knacks.KnickKnacks.MOD_ID;
-import static com.squizzle_dizzle.knick_knacks.common.registry.KnickKnacksBlockRegistry.*;
-import static com.squizzle_dizzle.knick_knacks.common.registry.KnickKnacksBlockRegistry.POLISHED_END_STONE;
-import static net.minecraft.world.level.block.Blocks.END_STONE;
-import static net.minecraft.world.level.block.Blocks.PURPUR_BLOCK;
 
 public class KnickKnacksBlocksStateProvider extends BlockStateProvider{
     public KnickKnacksBlocksStateProvider(DataGenerator generator, ExistingFileHelper existingFileHelper) {
@@ -32,59 +28,60 @@ public class KnickKnacksBlocksStateProvider extends BlockStateProvider{
     @Override
     protected void registerStatesAndModels() {
 
-        slabBlock((SlabBlock) KnickKnacksBlockRegistry.END_STONE_SLAB.get(), blockTexture(END_STONE), blockTexture(END_STONE));
-        stairsBlock((StairBlock) KnickKnacksBlockRegistry.END_STONE_STAIRS.get(), blockTexture(END_STONE));
-        wallBlock(KnickKnacksBlockRegistry.END_STONE_WALL.get(), blockTexture(END_STONE));
-        wallBlock(END_STONE_WALL, blockEndStoneLoc(END_STONE));
-        axisBlock((RotatedPillarBlock) END_STONE_PILLAR.get(), blockEndLoc(END_STONE_PILLAR), blockEndLoc(END_STONE_PILLAR, "top"));
-        simpleBlock(CRACKED_END_STONE_BRICKS.get());
-        simpleBlock(POLISHED_END_STONE.get());
+        slabBlock((SlabBlock) KnickKnacksBlockRegistry.END_STONE_SLAB.get(), blockTexture(Blocks.END_STONE), blockTexture(Blocks.END_STONE));
+        stairsBlock((StairBlock) KnickKnacksBlockRegistry.END_STONE_STAIRS.get(), blockTexture(Blocks.END_STONE));
+        wallBlock(KnickKnacksBlockRegistry.END_STONE_WALL.get(), blockTexture(Blocks.END_STONE));
+        wallBlock(KnickKnacksBlockRegistry.END_STONE_WALL, blockEndStoneLoc(Blocks.END_STONE));
+        axisBlock((RotatedPillarBlock) KnickKnacksBlockRegistry.END_STONE_PILLAR.get(), blockEndLoc(KnickKnacksBlockRegistry.END_STONE_PILLAR), blockEndLoc(KnickKnacksBlockRegistry.END_STONE_PILLAR, "top"));
+        simpleBlock(KnickKnacksBlockRegistry.CRACKED_END_STONE_BRICKS.get());
+        simpleBlock(KnickKnacksBlockRegistry.POLISHED_END_STONE.get());
         slabBlock((SlabBlock) KnickKnacksBlockRegistry.POLISHED_END_STONE_SLAB.get(), blockEndLoc(KnickKnacksBlockRegistry.POLISHED_END_STONE), blockEndLoc(KnickKnacksBlockRegistry.POLISHED_END_STONE));
         stairsBlock((StairBlock) KnickKnacksBlockRegistry.POLISHED_END_STONE_STAIRS.get(), blockEndLoc(KnickKnacksBlockRegistry.POLISHED_END_STONE));
-        wallBlock(POLISHED_END_STONE_WALL, blockEndLoc(POLISHED_END_STONE));
+        wallBlock(KnickKnacksBlockRegistry.POLISHED_END_STONE_WALL, blockEndLoc(KnickKnacksBlockRegistry.POLISHED_END_STONE));
 
-        simpleBlock(DARK_PURPUR_BLOCK.get());
+        simpleBlock(KnickKnacksBlockRegistry.DARK_PURPUR_BLOCK.get());
         slabBlock((SlabBlock) KnickKnacksBlockRegistry.DARK_PURPUR_SLAB.get(), blockEndLoc(KnickKnacksBlockRegistry.DARK_PURPUR_BLOCK), blockEndLoc(KnickKnacksBlockRegistry.DARK_PURPUR_BLOCK));
         stairsBlock((StairBlock) KnickKnacksBlockRegistry.DARK_PURPUR_STAIRS.get(), blockEndLoc(KnickKnacksBlockRegistry.DARK_PURPUR_BLOCK));
-        wallBlock(DARK_PURPUR_WALL, blockEndLoc(DARK_PURPUR_BLOCK));
+        wallBlock(KnickKnacksBlockRegistry.DARK_PURPUR_WALL, blockEndLoc(KnickKnacksBlockRegistry.DARK_PURPUR_BLOCK));
 
-        simpleBlock(CRACKED_DARK_PURPUR.get());
+        simpleBlock(KnickKnacksBlockRegistry.CRACKED_DARK_PURPUR.get());
 
-        axisBlock((RotatedPillarBlock) DARK_PURPUR_PILLAR.get(), blockEndLoc(DARK_PURPUR_PILLAR), blockEndLoc(DARK_PURPUR_PILLAR, "top"));
+        axisBlock(KnickKnacksBlockRegistry.DARK_PURPUR_PILLAR.get(), blockEndLoc(KnickKnacksBlockRegistry.DARK_PURPUR_PILLAR), blockEndLoc(KnickKnacksBlockRegistry.DARK_PURPUR_PILLAR, "top"));
 
 
-        simpleBlock(POLISHED_DARK_PURPUR.get());
+        simpleBlock(KnickKnacksBlockRegistry.POLISHED_DARK_PURPUR.get());
         slabBlock((SlabBlock) KnickKnacksBlockRegistry.POLISHED_DARK_PURPUR_SLAB.get(), blockEndLoc(KnickKnacksBlockRegistry.POLISHED_DARK_PURPUR), blockEndLoc(KnickKnacksBlockRegistry.POLISHED_DARK_PURPUR));
         stairsBlock((StairBlock) KnickKnacksBlockRegistry.POLISHED_DARK_PURPUR_STAIRS.get(), blockEndLoc(KnickKnacksBlockRegistry.POLISHED_DARK_PURPUR));
-        wallBlock(POLISHED_DARK_PURPUR_WALL, blockEndLoc(POLISHED_DARK_PURPUR));
+        wallBlock(KnickKnacksBlockRegistry.POLISHED_DARK_PURPUR_WALL, blockEndLoc(KnickKnacksBlockRegistry.POLISHED_DARK_PURPUR));
 
-        wallBlock(PURPUR_WALL, blockPurpurBlockLoc(PURPUR_BLOCK));
-        simpleBlock(CRACKED_PURPUR.get());
+        wallBlock(KnickKnacksBlockRegistry.PURPUR_WALL, blockPurpurBlockLoc(Blocks.PURPUR_BLOCK));
+        simpleBlock(KnickKnacksBlockRegistry.CRACKED_PURPUR.get());
 
-        simpleBlock(POLISHED_PURPUR.get());
+        simpleBlock(KnickKnacksBlockRegistry.POLISHED_PURPUR.get());
         slabBlock((SlabBlock) KnickKnacksBlockRegistry.POLISHED_PURPUR_SLAB.get(), blockEndLoc(KnickKnacksBlockRegistry.POLISHED_PURPUR), blockEndLoc(KnickKnacksBlockRegistry.POLISHED_PURPUR));
         stairsBlock((StairBlock) KnickKnacksBlockRegistry.POLISHED_PURPUR_STAIRS.get(), blockEndLoc(KnickKnacksBlockRegistry.POLISHED_PURPUR));
-        wallBlock(POLISHED_PURPUR_WALL, blockEndLoc(POLISHED_PURPUR));
+        wallBlock(KnickKnacksBlockRegistry.POLISHED_PURPUR_WALL, blockEndLoc(KnickKnacksBlockRegistry.POLISHED_PURPUR));
 
-        simpleBlock(END_SAND.get());
-        simpleBlock(SMOOTH_END_SANDSTONE.get());
+        simpleBlock(KnickKnacksBlockRegistry.END_SAND.get());
+        simpleBlock(KnickKnacksBlockRegistry.SMOOTH_END_SANDSTONE.get());
         //slabBlock((SlabBlock) END_SANDSTONE_SLAB.get(), blockLoc(END_SANDSTONE), blockLoc(KnickKnacksBlockRegistry.END_SANDSTONE));
-        stairsBlock((StairBlock) END_SANDSTONE_STAIRS.get(), blockEndLoc(KnickKnacksBlockRegistry.END_SANDSTONE));
-        wallBlock(END_SANDSTONE_WALL, blockEndLoc(END_SANDSTONE));
+        stairsBlock(KnickKnacksBlockRegistry.END_SANDSTONE_STAIRS.get(), blockEndLoc(KnickKnacksBlockRegistry.END_SANDSTONE));
+        wallBlock(KnickKnacksBlockRegistry.END_SANDSTONE_WALL, blockEndLoc(KnickKnacksBlockRegistry.END_SANDSTONE));
 
         //sandstoneBlock(END_SANDSTONE, blockLoc(END_SANDSTONE), blockLoc(SMOOTH_END_SANDSTONE));
-        chiseledBlock(CHISELED_END_SANDSTONE, blockEndLoc(CHISELED_END_SANDSTONE), blockEndLoc(SMOOTH_END_SANDSTONE));
-        chiseledBlock(CHISELED_DARK_PURPUR, blockEndLoc(CHISELED_DARK_PURPUR), blockEndLoc(POLISHED_DARK_PURPUR));
-        chiseledBlock(CHISELED_PURPUR, blockEndLoc(CHISELED_PURPUR), blockEndLoc(POLISHED_PURPUR));
-        chiseledBlock(CHISELED_END_STONE, blockEndLoc(CHISELED_END_STONE), blockEndLoc(POLISHED_END_STONE));
+        chiseledBlock(KnickKnacksBlockRegistry.CHISELED_END_SANDSTONE, blockEndLoc(KnickKnacksBlockRegistry.CHISELED_END_SANDSTONE), blockEndLoc(KnickKnacksBlockRegistry.SMOOTH_END_SANDSTONE));
+        chiseledBlock(KnickKnacksBlockRegistry.CHISELED_DARK_PURPUR, blockEndLoc(KnickKnacksBlockRegistry.CHISELED_DARK_PURPUR), blockEndLoc(KnickKnacksBlockRegistry.POLISHED_DARK_PURPUR));
+        chiseledBlock(KnickKnacksBlockRegistry.CHISELED_PURPUR, blockEndLoc(KnickKnacksBlockRegistry.CHISELED_PURPUR), blockEndLoc(KnickKnacksBlockRegistry.POLISHED_PURPUR));
+        chiseledBlock(KnickKnacksBlockRegistry.CHISELED_END_STONE, blockEndLoc(KnickKnacksBlockRegistry.CHISELED_END_STONE), blockEndLoc(KnickKnacksBlockRegistry.POLISHED_END_STONE));
 
 
-        directionalBlock(ERST.get(), models().cross(ERST.getId().getPath(), blockEndLoc(ERST)).renderType("cutout"));
-        directionalBlock(PONT.get(), models().cross(PONT.getId().getPath(), blockEndLoc(PONT)).renderType("cutout"));
-        directionalBlock(SMALL_CHORUS_FLOWER.get(), models().cross(SMALL_CHORUS_FLOWER.getId().getPath(), blockEndLoc(SMALL_CHORUS_FLOWER)).renderType("cutout"));
+        //slabBlock(KnickKnacksBlockRegistry.END_SANDSTONE_SLAB.get(), blockEndLoc(KnickKnacksBlockRegistry.END_SANDSTONE),blockEndLoc(KnickKnacksBlockRegistry.END_SANDSTONE), blockEndLoc(KnickKnacksBlockRegistry.END_SANDSTONE, "bottom"), blockEndLoc(KnickKnacksBlockRegistry.SMOOTH_END_SANDSTONE));
+        directionalBlock(KnickKnacksBlockRegistry.ERST.get(), models().cross(KnickKnacksBlockRegistry.ERST.getId().getPath(), blockEndLoc(KnickKnacksBlockRegistry.ERST)).renderType("cutout"));
+        directionalBlock(KnickKnacksBlockRegistry.PONT.get(), models().cross(KnickKnacksBlockRegistry.PONT.getId().getPath(), blockEndLoc(KnickKnacksBlockRegistry.PONT)).renderType("cutout"));
+        directionalBlock(KnickKnacksBlockRegistry.SMALL_CHORUS_FLOWER.get(), models().cross(KnickKnacksBlockRegistry.SMALL_CHORUS_FLOWER.getId().getPath(), blockEndLoc(KnickKnacksBlockRegistry.SMALL_CHORUS_FLOWER)).renderType("cutout"));
 
         simpleBlock(KnickKnacksBlockRegistry.PLITE_PLANKS.get());
-        simpleBlock(PLITE_LEAVES.get());
+        simpleBlock(KnickKnacksBlockRegistry.PLITE_LEAVES.get());
         axisBlock(KnickKnacksBlockRegistry.PLITE_LOG.get(), blockEndLoc(KnickKnacksBlockRegistry.PLITE_LOG), blockEndLoc(KnickKnacksBlockRegistry.PLITE_LOG, "top"));
         axisBlock(KnickKnacksBlockRegistry.STRIPPED_PLITE_LOG.get(), blockEndLoc(KnickKnacksBlockRegistry.STRIPPED_PLITE_LOG), blockEndLoc(KnickKnacksBlockRegistry.STRIPPED_PLITE_LOG, "top"));
         axisBlock(KnickKnacksBlockRegistry.STRIPPED_PLITE_WOOD.get(), models().cubeColumn(KnickKnacksBlockRegistry.STRIPPED_PLITE_WOOD.getId().getPath(), blockEndLoc(KnickKnacksBlockRegistry.STRIPPED_PLITE_LOG), blockEndLoc(KnickKnacksBlockRegistry.STRIPPED_PLITE_LOG)), models().cubeColumn(KnickKnacksBlockRegistry.STRIPPED_PLITE_WOOD.getId().getPath(), blockEndLoc(KnickKnacksBlockRegistry.STRIPPED_PLITE_LOG), blockEndLoc(KnickKnacksBlockRegistry.STRIPPED_PLITE_LOG)));
@@ -97,14 +94,16 @@ public class KnickKnacksBlocksStateProvider extends BlockStateProvider{
         trapdoorBlockWithRenderType(KnickKnacksBlockRegistry.PLITE_TRAPDOOR.get(), blockEndLoc(KnickKnacksBlockRegistry.PLITE_TRAPDOOR), true, "cutout");
         fenceGateBlock(KnickKnacksBlockRegistry.PLITE_FENCE_GATE.get(), blockEndLoc(KnickKnacksBlockRegistry.PLITE_PLANKS));
 
-        simpleBlock(PLITE_SAPLING.get(), models().cross(KnickKnacksBlockRegistry.PLITE_SAPLING.getId().getPath(),
+        simpleBlock(KnickKnacksBlockRegistry.PLITE_SAPLING.get(), models().cross(KnickKnacksBlockRegistry.PLITE_SAPLING.getId().getPath(),
                 blockTexture(KnickKnacksBlockRegistry.PLITE_SAPLING.get())));
 
+        simpleBlock(KnickKnacksBlockRegistry.END_ICE.get());
+        simpleBlock(KnickKnacksBlockRegistry.GREEN_ICE.get());
+        simpleBlock(KnickKnacksBlockRegistry.PACKED_END_ICE.get());
 
+        axisBlock(KnickKnacksBlockRegistry.ACID_ROCK.get(), blockEndLoc(KnickKnacksBlockRegistry.ACID_ROCK), blockEndLoc(KnickKnacksBlockRegistry.ACID_ROCK, "top"));
 
-        simpleBlock(END_ICE.get());
-        simpleBlock(GREEN_ICE.get());
-        simpleBlock(PACKED_END_ICE.get());
+        simpleBlock(KnickKnacksBlockRegistry.END_SANDSTONE.get(), models().cubeBottomTop(KnickKnacksBlockRegistry.END_SANDSTONE.getId().getPath(), blockEndLoc(KnickKnacksBlockRegistry.END_SANDSTONE), blockEndLoc(KnickKnacksBlockRegistry.END_SANDSTONE, "bottom"), blockEndLoc(KnickKnacksBlockRegistry.SMOOTH_END_SANDSTONE)));
         /**simpleBlock(KnickKnacksBlockRegistry.DARK_PURPUR.get());
         slabBlock(KnickKnacksBlockRegistry.DARK_PURPUR_SLAB.get(), blockLoc(KnickKnacksBlockRegistry.DARK_PURPUR), blockLoc(KnickKnacksBlockRegistry.DARK_PURPUR));
         stairsBlock(KnickKnacksBlockRegistry.DARK_PURPUR_STAIRS.get(), blockLoc(KnickKnacksBlockRegistry.DARK_PURPUR));

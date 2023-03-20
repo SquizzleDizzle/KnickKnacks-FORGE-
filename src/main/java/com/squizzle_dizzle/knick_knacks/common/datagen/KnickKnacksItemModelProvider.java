@@ -1,6 +1,7 @@
 package com.squizzle_dizzle.knick_knacks.common.datagen;
 
 import com.squizzle_dizzle.knick_knacks.common.registry.KnickKnacksBlockRegistry;
+import com.squizzle_dizzle.knick_knacks.common.registry.KnickKnacksItemRegistry;
 import net.minecraft.data.DataGenerator;
 import net.minecraft.world.level.block.Block;
 import net.minecraftforge.client.model.generators.ItemModelProvider;
@@ -98,6 +99,7 @@ public class KnickKnacksItemModelProvider extends ItemModelProvider {
         blockModel(KnickKnacksBlockRegistry.PLITE_FENCE_GATE);
 
 
+        itemEndModel(KnickKnacksItemRegistry.ACID_BUCKET, GENERATED);
 /*blockModel(KnickKnacksBlockRegistry.COBBLED_DARK_PURPUR);
         blockModel(KnickKnacksBlockRegistry.COBBLED_DARK_PURPUR_SLAB);
         blockModel(KnickKnacksBlockRegistry.COBBLED_DARK_PURPUR_STAIRS);

@@ -2,6 +2,7 @@ package com.squizzle_dizzle.knick_knacks.common.registry;
 
 import com.squizzle_dizzle.knick_knacks.KnickKnacks;
 import com.squizzle_dizzle.knick_knacks.common.block.EndSandStoneBlock;
+import com.squizzle_dizzle.knick_knacks.common.world.feature.config.AcidRockFeatureConfiguration;
 import com.squizzle_dizzle.knick_knacks.common.world.feature.config.EndFrozenSpringConfig;
 import net.minecraft.core.Direction;
 import net.minecraft.core.Holder;
@@ -10,8 +11,8 @@ import net.minecraft.data.BuiltinRegistries;
 import net.minecraft.data.worldgen.features.FeatureUtils;
 import net.minecraft.data.worldgen.placement.PlacementUtils;
 import net.minecraft.resources.ResourceLocation;
-import net.minecraft.tags.BlockTags;
 import net.minecraft.util.random.SimpleWeightedRandomList;
+import net.minecraft.util.valueproviders.ConstantInt;
 import net.minecraft.util.valueproviders.UniformInt;
 import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.block.Blocks;
@@ -22,9 +23,6 @@ import net.minecraft.world.level.levelgen.feature.configurations.*;
 import net.minecraft.world.level.levelgen.feature.stateproviders.BlockStateProvider;
 import net.minecraft.world.level.levelgen.feature.stateproviders.WeightedStateProvider;
 import net.minecraft.world.level.levelgen.placement.CaveSurface;
-import net.minecraft.world.level.material.Fluids;
-
-import java.util.List;
 
 public class KnickKnacksConfigFeatureRegistry {
     public static final Holder<ConfiguredFeature<SimpleBlockConfiguration, ?>> ERST_VEGETATION = FeatureUtils.register("erst_vegetation", Feature.SIMPLE_BLOCK, new SimpleBlockConfiguration(new WeightedStateProvider(SimpleWeightedRandomList.<BlockState>builder().add(KnickKnacksBlockRegistry.ERST.get().defaultBlockState(), 4).add(KnickKnacksBlockRegistry.PONT.get().defaultBlockState(), 5).add(KnickKnacksBlockRegistry.SMALL_CHORUS_FLOWER.get().defaultBlockState(), 1))));
@@ -40,6 +38,9 @@ public class KnickKnacksConfigFeatureRegistry {
     public static final Holder<ConfiguredFeature<VegetationPatchConfiguration, ?>> FROZEN_END_STONE_PATCH_CEILING = FeatureUtils.register("frozen_end_stone_patch_ceiling", Feature.VEGETATION_PATCH, new VegetationPatchConfiguration(KnickKnacksTagRegistry.Blocks.END_GRASS_PLACEABLE, BlockStateProvider.simple(KnickKnacksBlockRegistry.FROZEN_ENDSTONE.get().defaultBlockState().setValue(EndSandStoneBlock.UP_DOWN ,Direction.DOWN)), PlacementUtils.inlinePlaced(ERST_VEGETATION) , CaveSurface.CEILING, UniformInt.of(1, 1), 0.0F, 5, 0.08F, UniformInt.of(10, 20), 0.3F));
 
     public static final Holder<ConfiguredFeature<EndFrozenSpringConfig, ?>> SPRING_FROZEN_END = registerConfiguredFeature("spring_frozen_end", KnickKnacksFeatureRegistry.END_FROZEN_SPRING.get(), new EndFrozenSpringConfig(KnickKnacksBlockRegistry.END_ICE.get().defaultBlockState(), false, 4, 1, HolderSet.direct(Block::builtInRegistryHolder)));
+    public static final Holder<ConfiguredFeature<DeltaFeatureConfiguration, ?>> DELTA = FeatureUtils.register("delta", Feature.DELTA_FEATURE, new DeltaFeatureConfiguration(Blocks.WATER.defaultBlockState(), KnickKnacksBlockRegistry.ACID_ROCK.get().defaultBlockState(), UniformInt.of(5, 9), UniformInt.of(2, 4)));
+    public static final Holder<ConfiguredFeature<AcidRockFeatureConfiguration, ?>> SMALL_ACID_ROCK_COLUMNS = registerConfiguredFeature("small_acid_rock_columns", KnickKnacksFeatureRegistry.END_BASALT_COLUMNS.get(), new AcidRockFeatureConfiguration(ConstantInt.of(1), UniformInt.of(1, 3)));
+    public static final Holder<ConfiguredFeature<AcidRockFeatureConfiguration, ?>> LARGE_ACID_ROCK_COLUMNS = registerConfiguredFeature("large_acid_rock_columns", KnickKnacksFeatureRegistry.END_BASALT_COLUMNS.get(), new AcidRockFeatureConfiguration(UniformInt.of(1, 2), UniformInt.of(3, 7)));
 
     public static <FC extends FeatureConfiguration, F extends Feature<FC>> Holder<ConfiguredFeature<FC, ?>> registerConfiguredFeature(String name, F feature, FC featureConfiguration) {
         ResourceLocation resourceLocation = new ResourceLocation(KnickKnacks.MOD_ID, name);

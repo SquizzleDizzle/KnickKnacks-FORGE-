@@ -1,4 +1,6 @@
 {
+  "block.knick_knacks.acid_fluid": "Acid Fluid",
+  "block.knick_knacks.acid_rock": "Acid Rock",
   "block.knick_knacks.chiseled_dark_purpur": "Chiseled Dark Purpur",
   "block.knick_knacks.chiseled_end_sandstone": "Chiseled End Sandstone",
   "block.knick_knacks.chiseled_end_stone": "Chiseled End Stone",
@@ -60,5 +62,6 @@
   "block.knick_knacks.stripped_plite_wood": "Stripped Plite Wood",
   "block.knick_knacks.tall_erst": "Tall Erst",
   "block.knick_knacks.tall_pont": "Tall Pont",
+  "item.knick_knacks.acid_bucket": "Acid Bucket",
   "itemGroup.knick_knacks": "Knick Knacks"
 }

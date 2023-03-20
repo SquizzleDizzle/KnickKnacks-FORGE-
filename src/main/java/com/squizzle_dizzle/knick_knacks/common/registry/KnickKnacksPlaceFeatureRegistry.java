@@ -24,6 +24,13 @@ public class KnickKnacksPlaceFeatureRegistry {
     public static final RegistryObject<PlacedFeature> FROZEN_END_STONE_PATCH_CELING = PLACED_FEATURES.register("frozen_end_stone_patch_ceiling", () -> new PlacedFeature((Holder<ConfiguredFeature<?,?>>)(Holder<? extends ConfiguredFeature<?,?>>) KnickKnacksConfigFeatureRegistry.FROZEN_END_STONE_PATCH_CEILING, List.of(placementPatch() ,inSquarePlacement(), placementNetherCrystalModifier(), biomeFilter())));
 
     public static final RegistryObject<PlacedFeature> FROZEN_END_SPRING = PLACED_FEATURES.register("frozen_end_spring", () -> new PlacedFeature((Holder<ConfiguredFeature<?,?>>)(Holder<? extends ConfiguredFeature<?,?>>) KnickKnacksConfigFeatureRegistry.SPRING_FROZEN_END, List.of(placementPatch() ,inSquarePlacement(), placementNetherCrystalModifier(), biomeFilter())));
+    public static final RegistryObject<PlacedFeature> DELTA = PLACED_FEATURES.register("delta", () -> new PlacedFeature((Holder<ConfiguredFeature<?,?>>)(Holder<? extends ConfiguredFeature<?,?>>) KnickKnacksConfigFeatureRegistry.DELTA, List.of(placement(), biomeFilter())));
+    public static final RegistryObject<PlacedFeature> SMALL_ACID_ROCK_COLUMNS = PLACED_FEATURES.register("small_acid_rock_columns", () -> new PlacedFeature((Holder<ConfiguredFeature<?,?>>)(Holder<? extends ConfiguredFeature<?,?>>) KnickKnacksConfigFeatureRegistry.SMALL_ACID_ROCK_COLUMNS, List.of(placement(), biomeFilter())));
+
+    public static final RegistryObject<PlacedFeature> LARGE_ACID_ROCK_COLUMNS = PLACED_FEATURES.register("large_acid_rock_columns", () -> new PlacedFeature((Holder<ConfiguredFeature<?,?>>)(Holder<? extends ConfiguredFeature<?,?>>) KnickKnacksConfigFeatureRegistry.LARGE_ACID_ROCK_COLUMNS, List.of(placement(), biomeFilter())));
+    private static CountOnEveryLayerPlacement placement(){
+        return CountOnEveryLayerPlacement.of(4);
+    }
 
     private static CountPlacement placementCrystal() {
         return CountPlacement.of(10);
