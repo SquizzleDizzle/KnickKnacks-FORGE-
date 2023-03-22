@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:item/handheld",
+  "textures": {
+    "layer0": "knick_knacks:block/tall_erst_top"
+  }
+}

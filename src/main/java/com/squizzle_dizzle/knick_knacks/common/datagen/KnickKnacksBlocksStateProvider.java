@@ -64,7 +64,7 @@ public class KnickKnacksBlocksStateProvider extends BlockStateProvider{
 
         simpleBlock(KnickKnacksBlockRegistry.END_SAND.get());
         simpleBlock(KnickKnacksBlockRegistry.SMOOTH_END_SANDSTONE.get());
-        //slabBlock((SlabBlock) END_SANDSTONE_SLAB.get(), blockLoc(END_SANDSTONE), blockLoc(KnickKnacksBlockRegistry.END_SANDSTONE));
+        simpleBlock(KnickKnacksBlockRegistry.CUT_END_SANDSTONE.get());
         stairsBlock(KnickKnacksBlockRegistry.END_SANDSTONE_STAIRS.get(), blockEndLoc(KnickKnacksBlockRegistry.END_SANDSTONE));
         wallBlock(KnickKnacksBlockRegistry.END_SANDSTONE_WALL, blockEndLoc(KnickKnacksBlockRegistry.END_SANDSTONE));
 
@@ -77,7 +77,9 @@ public class KnickKnacksBlocksStateProvider extends BlockStateProvider{
 
         //slabBlock(KnickKnacksBlockRegistry.END_SANDSTONE_SLAB.get(), blockEndLoc(KnickKnacksBlockRegistry.END_SANDSTONE),blockEndLoc(KnickKnacksBlockRegistry.END_SANDSTONE), blockEndLoc(KnickKnacksBlockRegistry.END_SANDSTONE, "bottom"), blockEndLoc(KnickKnacksBlockRegistry.SMOOTH_END_SANDSTONE));
         directionalBlock(KnickKnacksBlockRegistry.ERST.get(), models().cross(KnickKnacksBlockRegistry.ERST.getId().getPath(), blockEndLoc(KnickKnacksBlockRegistry.ERST)).renderType("cutout"));
+        directionalBlock(KnickKnacksBlockRegistry.TALL_ERST.get(), models().cross(KnickKnacksBlockRegistry.TALL_ERST.getId().getPath(), blockEndLoc(KnickKnacksBlockRegistry.TALL_ERST)).renderType("cutout"));
         directionalBlock(KnickKnacksBlockRegistry.PONT.get(), models().cross(KnickKnacksBlockRegistry.PONT.getId().getPath(), blockEndLoc(KnickKnacksBlockRegistry.PONT)).renderType("cutout"));
+        directionalBlock(KnickKnacksBlockRegistry.TALL_PONT.get(), models().cross(KnickKnacksBlockRegistry.TALL_PONT.getId().getPath(), blockEndLoc(KnickKnacksBlockRegistry.TALL_PONT)).renderType("cutout"));
         directionalBlock(KnickKnacksBlockRegistry.SMALL_CHORUS_FLOWER.get(), models().cross(KnickKnacksBlockRegistry.SMALL_CHORUS_FLOWER.getId().getPath(), blockEndLoc(KnickKnacksBlockRegistry.SMALL_CHORUS_FLOWER)).renderType("cutout"));
 
         simpleBlock(KnickKnacksBlockRegistry.PLITE_PLANKS.get());
@@ -94,8 +96,7 @@ public class KnickKnacksBlocksStateProvider extends BlockStateProvider{
         trapdoorBlockWithRenderType(KnickKnacksBlockRegistry.PLITE_TRAPDOOR.get(), blockEndLoc(KnickKnacksBlockRegistry.PLITE_TRAPDOOR), true, "cutout");
         fenceGateBlock(KnickKnacksBlockRegistry.PLITE_FENCE_GATE.get(), blockEndLoc(KnickKnacksBlockRegistry.PLITE_PLANKS));
 
-        simpleBlock(KnickKnacksBlockRegistry.PLITE_SAPLING.get(), models().cross(KnickKnacksBlockRegistry.PLITE_SAPLING.getId().getPath(),
-                blockTexture(KnickKnacksBlockRegistry.PLITE_SAPLING.get())));
+        directionalBlock(KnickKnacksBlockRegistry.PLITE_SAPLING.get(), models().cross(KnickKnacksBlockRegistry.PLITE_SAPLING.getId().getPath(), blockEndLoc(KnickKnacksBlockRegistry.PLITE_SAPLING)).renderType("cutout"));
 
         simpleBlock(KnickKnacksBlockRegistry.END_ICE.get());
         simpleBlock(KnickKnacksBlockRegistry.GREEN_ICE.get());

@@ -1,7 +1,6 @@
 {
-  "parent": "minecraft:block/cube_column",
+  "parent": "minecraft:block/cube_all",
   "textures": {
-    "end": "knick_knacks:block/polished_purpur",
-    "side": "knick_knacks:block/chiseled_purpur"
+    "all": "knick_knacks:block/chiseled_purpur"
   }
 }

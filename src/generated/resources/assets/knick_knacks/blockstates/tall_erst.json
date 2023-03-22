@@ -1,0 +1,10 @@
+{
+  "variants": {
+    "half=upper": {
+      "model": "knick_knacks:block/tall_erst"
+    },
+    "half=lower": {
+      "model": "knick_knacks:block/tall_erst_bottom"
+    }
+  }
+}

@@ -1,5 +1,6 @@
 package com.squizzle_dizzle.knick_knacks.common.registry;
 
+import ca.weblite.objc.Proxy;
 import com.squizzle_dizzle.knick_knacks.KnickKnacks;
 import com.squizzle_dizzle.knick_knacks.common.block.*;
 import net.minecraft.core.BlockPos;
@@ -134,13 +135,13 @@ public class KnickKnacksBlockRegistry {
     public static final RegistryObject<Block> CHISELED_END_SANDSTONE = registerBlock("chiseled_end_sandstone",
             () -> new EndSandStoneBlock(BlockBehaviour.Properties.of(Material.ICE)
                     .strength(3f).sound(SoundType.STONE)), KnickKnacksTabRegistry.TAB);
+
+    public static final RegistryObject<Block> CUT_END_SANDSTONE = registerBlock("cut_end_sandstone",
+            () -> new EndSandStoneBlock(BlockBehaviour.Properties.of(Material.ICE)
+                    .strength(3f).sound(SoundType.STONE)), KnickKnacksTabRegistry.TAB);
     public static final RegistryObject<Block> SMOOTH_END_SANDSTONE = registerBlock("smooth_end_sandstone",
             () -> new EndSandStoneBlock(BlockBehaviour.Properties.of(Material.ICE)
                     .strength(3f).sound(SoundType.STONE)), KnickKnacksTabRegistry.TAB);
-    public static final RegistryObject<Block> CUT_SANDSTONE = registerBlock("cut_sandstone",
-            () -> new EndSandStoneBlock(BlockBehaviour.Properties.of(Material.ICE)
-                    .strength(3f).sound(SoundType.STONE)), KnickKnacksTabRegistry.TAB);
-
     public static final RegistryObject<Block> SMALL_CHORUS_FLOWER = registerBlock("small_chorus_flower",
             () -> new TallEndGrassBlock(14, 1,BlockBehaviour.Properties.of(Material.REPLACEABLE_PLANT).noCollission().instabreak().sound(SoundType.GRASS).offsetType(BlockBehaviour.OffsetType.XYZ)), KnickKnacksTabRegistry.TAB);
 
@@ -209,8 +210,7 @@ public class KnickKnacksBlockRegistry {
     public static final RegistryObject<RotatedPillarBlock> ACID_ROCK = registerBlock("acid_rock", () -> new RotatedPillarBlock(BlockBehaviour.Properties.copy(Blocks.BASALT)), KnickKnacksTabRegistry.TAB);
 
     public static final RegistryObject<Block> PLITE_SAPLING = registerBlock("plite_sapling",
-            () -> new Block(BlockBehaviour.Properties.of(Material.GRASS)
-                    .strength(3f).sound(SoundType.GRASS)), KnickKnacksTabRegistry.TAB);
+            () -> new TallEndGrassBlock(12, 2,BlockBehaviour.Properties.of(Material.PLANT).noCollission().instabreak().sound(SoundType.GRASS)), KnickKnacksTabRegistry.TAB);
 
 
     public static final RegistryObject<LiquidBlock> ACID_FLUID = BLOCKS.register("acid_fluid",
@@ -320,6 +320,8 @@ public class KnickKnacksBlockRegistry {
                     .strength(0.5f)), KnickKnacksTabRegistry.TAB);
     public static final RegistryObject<WallBlock> POLISHED_SCRATCH_STONE_WALL = registerBlock("polished_scratch_stone_wall",
             () -> new WallBlock(BlockBehaviour.Properties.copy(POLISHED_DARK_PURPUR.get())), KnickKnacksTabRegistry.TAB);
+
+
     private static <T extends Block> RegistryObject<T> registerBlock(String name, Supplier<T> block, CreativeModeTab tab) {
         RegistryObject<T> toReturn = BLOCKS.register(name, block);
         registerBlockItem(name, toReturn, tab);

@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "knick_knacks:block/end_sandstone_slab"
+    },
+    "type=double": {
+      "model": "knick_knacks:block/end_sandstone"
+    },
+    "type=top": {
+      "model": "knick_knacks:block/end_sandstone_slab_top"
+    }
+  }
+}

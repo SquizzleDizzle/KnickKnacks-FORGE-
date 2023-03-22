@@ -27,7 +27,7 @@ public class KnickKnacksFluidTypeRegistry {
 
     private static RegistryObject<FluidType> register(String name, FluidType.Properties properties) {
         return FLUID_TYPES.register(name, () -> new BaseFluidType(ACID_STILL, ACID_FLOW,
-                0xA1E038D0, new Vector3f(224f / 255f, 56f / 255f, 208f / 255f), properties));
+                0xA1E038D0, new Vector3f(142f / 255f, 88f / 255f, 183f / 255f), properties));
     }
 
     public static void register(IEventBus eventBus) {

@@ -1,5 +1,5 @@
 {
-  "parent": "minecraft:block/stairs",
+  "parent": "minecraft:block/slab_top",
   "textures": {
     "bottom": "knick_knacks:block/end_sandstone_bottom",
     "side": "knick_knacks:block/end_sandstone",

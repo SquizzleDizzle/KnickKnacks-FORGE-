@@ -1,0 +1,8 @@
+{
+  "parent": "minecraft:block/cross",
+  "textures": {
+    "cross": "knick_knacks:block/tall_pont_bottom",
+    "particle": "knick_knacks:block/tall_pont_bottom"
+  },
+  "render_type": "cutout"
+}
