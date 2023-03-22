@@ -132,6 +132,14 @@ public class KnickKnacksBlockRegistry {
                     .strength(0.5f)), KnickKnacksTabRegistry.TAB);
     public static final RegistryObject<WallBlock> END_SANDSTONE_WALL = registerBlock("end_sandstone_wall",
             () -> new WallBlock(BlockBehaviour.Properties.copy(END_SANDSTONE.get())), KnickKnacksTabRegistry.TAB);
+    public static final RegistryObject<WallBlock> CUT_END_SANDSTONE_WALL = registerBlock("cut_end_sandstone_wall",
+            () -> new WallBlock(BlockBehaviour.Properties.copy(END_SANDSTONE.get())), KnickKnacksTabRegistry.TAB);
+    public static final RegistryObject<SlabBlock> CUT_END_SANDSTONE_SLAB = registerBlock("cut_end_sandstone_slab",
+            () -> new SlabBlock(BlockBehaviour.Properties.of(Material.STONE, MaterialColor.SAND)
+                    .strength(0.5f)), KnickKnacksTabRegistry.TAB);
+    public static final RegistryObject<StairBlock> CUT_END_SANDSTONE_STAIRS = registerBlock("cut_end_sandstone_stairs",
+            () -> new  StairBlock(END_SANDSTONE.get().defaultBlockState(), BlockBehaviour.Properties.copy(END_SANDSTONE.get())), KnickKnacksTabRegistry.TAB);
+
     public static final RegistryObject<Block> CHISELED_END_SANDSTONE = registerBlock("chiseled_end_sandstone",
             () -> new EndSandStoneBlock(BlockBehaviour.Properties.of(Material.ICE)
                     .strength(3f).sound(SoundType.STONE)), KnickKnacksTabRegistry.TAB);
@@ -143,13 +151,13 @@ public class KnickKnacksBlockRegistry {
             () -> new EndSandStoneBlock(BlockBehaviour.Properties.of(Material.ICE)
                     .strength(3f).sound(SoundType.STONE)), KnickKnacksTabRegistry.TAB);
     public static final RegistryObject<Block> SMALL_CHORUS_FLOWER = registerBlock("small_chorus_flower",
-            () -> new TallEndGrassBlock(14, 1,BlockBehaviour.Properties.of(Material.REPLACEABLE_PLANT).noCollission().instabreak().sound(SoundType.GRASS).offsetType(BlockBehaviour.OffsetType.XYZ)), KnickKnacksTabRegistry.TAB);
+            () -> new TallEndGrassBlock(11, 5,BlockBehaviour.Properties.of(Material.REPLACEABLE_PLANT).noCollission().instabreak().sound(SoundType.GRASS).offsetType(BlockBehaviour.OffsetType.XYZ)), KnickKnacksTabRegistry.TAB);
 
     public static final RegistryObject<Block> ERST = registerBlock("erst",
-            () -> new TallEndGrassBlock(14, 1,BlockBehaviour.Properties.of(Material.REPLACEABLE_PLANT).noCollission().instabreak().sound(SoundType.GRASS).offsetType(BlockBehaviour.OffsetType.XYZ)), KnickKnacksTabRegistry.TAB);
+            () -> new TallEndGrassBlock(13, 2,BlockBehaviour.Properties.of(Material.REPLACEABLE_PLANT).noCollission().instabreak().sound(SoundType.GRASS).offsetType(BlockBehaviour.OffsetType.XYZ)), KnickKnacksTabRegistry.TAB);
 
     public static final RegistryObject<Block> PONT = registerBlock("pont",
-            () -> new TallEndGrassBlock(14, 1,BlockBehaviour.Properties.of(Material.REPLACEABLE_PLANT).noCollission().instabreak().sound(SoundType.GRASS).offsetType(BlockBehaviour.OffsetType.XYZ)), KnickKnacksTabRegistry.TAB);
+            () -> new TallEndGrassBlock(13, 2,BlockBehaviour.Properties.of(Material.REPLACEABLE_PLANT).noCollission().instabreak().sound(SoundType.GRASS).offsetType(BlockBehaviour.OffsetType.XYZ)), KnickKnacksTabRegistry.TAB);
 
     public static final RegistryObject<Block> TALL_ERST = registerBlock("tall_erst",
             () -> new DoubleEndPlantBlock(BlockBehaviour.Properties.of(Material.REPLACEABLE_PLANT).noCollission().instabreak().sound(SoundType.GRASS).offsetType(BlockBehaviour.OffsetType.XYZ)), KnickKnacksTabRegistry.TAB);

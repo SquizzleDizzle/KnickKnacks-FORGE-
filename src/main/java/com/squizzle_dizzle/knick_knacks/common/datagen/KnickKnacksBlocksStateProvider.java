@@ -67,6 +67,9 @@ public class KnickKnacksBlocksStateProvider extends BlockStateProvider{
         simpleBlock(KnickKnacksBlockRegistry.CUT_END_SANDSTONE.get());
         stairsBlock(KnickKnacksBlockRegistry.END_SANDSTONE_STAIRS.get(), blockEndLoc(KnickKnacksBlockRegistry.END_SANDSTONE));
         wallBlock(KnickKnacksBlockRegistry.END_SANDSTONE_WALL, blockEndLoc(KnickKnacksBlockRegistry.END_SANDSTONE));
+        wallBlock(KnickKnacksBlockRegistry.CUT_END_SANDSTONE_WALL, blockEndLoc(KnickKnacksBlockRegistry.END_SANDSTONE));
+        stairsBlock(KnickKnacksBlockRegistry.CUT_END_SANDSTONE_STAIRS.get(), blockEndLoc(KnickKnacksBlockRegistry.END_SANDSTONE));
+        slabBlock(KnickKnacksBlockRegistry.CUT_END_SANDSTONE_SLAB.get(), blockEndLoc(KnickKnacksBlockRegistry.END_SANDSTONE),blockEndLoc(KnickKnacksBlockRegistry.END_SANDSTONE), blockEndLoc(KnickKnacksBlockRegistry.END_SANDSTONE, "bottom"), blockEndLoc(KnickKnacksBlockRegistry.SMOOTH_END_SANDSTONE));
 
         //sandstoneBlock(END_SANDSTONE, blockLoc(END_SANDSTONE), blockLoc(SMOOTH_END_SANDSTONE));
         chiseledBlock(KnickKnacksBlockRegistry.CHISELED_END_SANDSTONE, blockEndLoc(KnickKnacksBlockRegistry.CHISELED_END_SANDSTONE), blockEndLoc(KnickKnacksBlockRegistry.SMOOTH_END_SANDSTONE));
@@ -75,7 +78,7 @@ public class KnickKnacksBlocksStateProvider extends BlockStateProvider{
         chiseledBlock(KnickKnacksBlockRegistry.CHISELED_END_STONE, blockEndLoc(KnickKnacksBlockRegistry.CHISELED_END_STONE), blockEndLoc(KnickKnacksBlockRegistry.POLISHED_END_STONE));
 
 
-        //slabBlock(KnickKnacksBlockRegistry.END_SANDSTONE_SLAB.get(), blockEndLoc(KnickKnacksBlockRegistry.END_SANDSTONE),blockEndLoc(KnickKnacksBlockRegistry.END_SANDSTONE), blockEndLoc(KnickKnacksBlockRegistry.END_SANDSTONE, "bottom"), blockEndLoc(KnickKnacksBlockRegistry.SMOOTH_END_SANDSTONE));
+        slabBlock(KnickKnacksBlockRegistry.END_SANDSTONE_SLAB.get(), blockEndLoc(KnickKnacksBlockRegistry.END_SANDSTONE),blockEndLoc(KnickKnacksBlockRegistry.END_SANDSTONE), blockEndLoc(KnickKnacksBlockRegistry.END_SANDSTONE, "bottom"), blockEndLoc(KnickKnacksBlockRegistry.SMOOTH_END_SANDSTONE));
         directionalBlock(KnickKnacksBlockRegistry.ERST.get(), models().cross(KnickKnacksBlockRegistry.ERST.getId().getPath(), blockEndLoc(KnickKnacksBlockRegistry.ERST)).renderType("cutout"));
         directionalBlock(KnickKnacksBlockRegistry.TALL_ERST.get(), models().cross(KnickKnacksBlockRegistry.TALL_ERST.getId().getPath(), blockEndLoc(KnickKnacksBlockRegistry.TALL_ERST)).renderType("cutout"));
         directionalBlock(KnickKnacksBlockRegistry.PONT.get(), models().cross(KnickKnacksBlockRegistry.PONT.getId().getPath(), blockEndLoc(KnickKnacksBlockRegistry.PONT)).renderType("cutout"));
