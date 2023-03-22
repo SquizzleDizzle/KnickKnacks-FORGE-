@@ -10,9 +10,6 @@ public class EndPliteForestBiome {
     public static Biome make() {
         BiomeGenerationSettings.Builder $$0 = (new BiomeGenerationSettings.Builder())
                 .addFeature(GenerationStep.Decoration.TOP_LAYER_MODIFICATION, KnickKnacksPlaceFeatureRegistry.ERST_BLOCK_PATCH_FLOOR.getHolder().get())
-                .addFeature(GenerationStep.Decoration.TOP_LAYER_MODIFICATION, KnickKnacksPlaceFeatureRegistry.DELTA.getHolder().get())
-                .addFeature(GenerationStep.Decoration.TOP_LAYER_MODIFICATION, KnickKnacksPlaceFeatureRegistry.SMALL_ACID_ROCK_COLUMNS.getHolder().get())
-                .addFeature(GenerationStep.Decoration.TOP_LAYER_MODIFICATION, KnickKnacksPlaceFeatureRegistry.LARGE_ACID_ROCK_COLUMNS.getHolder().get())
                 .addFeature(GenerationStep.Decoration.SURFACE_STRUCTURES, EndPlacements.END_SPIKE);
         MobSpawnSettings.Builder $$1 = new MobSpawnSettings.Builder();
         BiomeDefaultFeatures.addSurfaceFreezing($$0);

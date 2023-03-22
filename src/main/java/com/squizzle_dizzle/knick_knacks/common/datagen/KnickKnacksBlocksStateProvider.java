@@ -102,7 +102,7 @@ public class KnickKnacksBlocksStateProvider extends BlockStateProvider{
         simpleBlock(KnickKnacksBlockRegistry.GREEN_ICE.get());
         simpleBlock(KnickKnacksBlockRegistry.PACKED_END_ICE.get());
 
-        axisBlock(KnickKnacksBlockRegistry.ACID_ROCK.get(), blockEndLoc(KnickKnacksBlockRegistry.ACID_ROCK), blockEndLoc(KnickKnacksBlockRegistry.ACID_ROCK, "top"));
+
 
         simpleBlock(KnickKnacksBlockRegistry.END_SANDSTONE.get(), models().cubeBottomTop(KnickKnacksBlockRegistry.END_SANDSTONE.getId().getPath(), blockEndLoc(KnickKnacksBlockRegistry.END_SANDSTONE), blockEndLoc(KnickKnacksBlockRegistry.END_SANDSTONE, "bottom"), blockEndLoc(KnickKnacksBlockRegistry.SMOOTH_END_SANDSTONE)));
         /**simpleBlock(KnickKnacksBlockRegistry.DARK_PURPUR.get());

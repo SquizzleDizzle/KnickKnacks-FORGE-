@@ -207,7 +207,6 @@ public class KnickKnacksBlockRegistry {
     public static final RegistryObject<FenceGateBlock> PLITE_FENCE_GATE = registerBlock("plite_fence_gate", () -> new FenceGateBlock(BlockBehaviour.Properties.copy(PLITE_PLANKS.get())), KnickKnacksTabRegistry.TAB);
 
 
-    public static final RegistryObject<RotatedPillarBlock> ACID_ROCK = registerBlock("acid_rock", () -> new RotatedPillarBlock(BlockBehaviour.Properties.copy(Blocks.BASALT)), KnickKnacksTabRegistry.TAB);
 
     public static final RegistryObject<Block> PLITE_SAPLING = registerBlock("plite_sapling",
             () -> new TallEndGrassBlock(12, 2,BlockBehaviour.Properties.of(Material.PLANT).noCollission().instabreak().sound(SoundType.GRASS)), KnickKnacksTabRegistry.TAB);

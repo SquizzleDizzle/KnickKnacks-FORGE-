@@ -63,22 +63,8 @@ public class AcidRockFeature extends Feature<AcidRockFeatureConfiguration> {
          if (blockpos1 != null) {
             int j = p_65171_ - i / 2;
 
-            for(BlockPos.MutableBlockPos blockpos$mutableblockpos = blockpos1.mutable(); j >= 0; --j) {
-               if (isAirOrLavaOcean(p_65168_, p_65169_, blockpos$mutableblockpos)) {
-                  this.setBlock(p_65168_, blockpos$mutableblockpos, KnickKnacksBlockRegistry.ACID_ROCK.get().defaultBlockState());
-                  blockpos$mutableblockpos.move(Direction.UP);
-                  flag = true;
-               } else {
-                  if (!p_65168_.getBlockState(blockpos$mutableblockpos).is(KnickKnacksBlockRegistry.ACID_ROCK.get())) {
-                     break;
-                  }
-
-                  blockpos$mutableblockpos.move(Direction.UP);
-               }
             }
          }
-      }
-
       return flag;
    }
 
