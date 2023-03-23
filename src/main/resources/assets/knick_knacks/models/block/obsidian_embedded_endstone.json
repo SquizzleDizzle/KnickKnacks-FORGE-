@@ -1,0 +1,9 @@
+{
+    "parent": "minecraft:block/cube_bottom_top",
+    "textures": {
+        "top": "minecraft:block/obsidian",
+        "bottom": "minecraft:block/end_stone",
+        "side": "knick_knacks:block/obsidian_embedded_endstone",
+        "particle": "minecraft:block/end_stone"
+    }
+}

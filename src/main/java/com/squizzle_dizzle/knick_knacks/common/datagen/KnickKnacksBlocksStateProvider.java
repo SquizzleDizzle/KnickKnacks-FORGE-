@@ -37,6 +37,8 @@ public class KnickKnacksBlocksStateProvider extends BlockStateProvider{
 
         simpleBlock(KnickKnacksBlockRegistry.CRACKED_END_STONE_BRICKS.get());
 
+        simpleBlock(KnickKnacksBlockRegistry.OBSIDIAN_EMBEDDED_ENDSTONE.get());
+
         simpleBlock(KnickKnacksBlockRegistry.POLISHED_END_STONE.get());
         slabBlock((SlabBlock) KnickKnacksBlockRegistry.POLISHED_END_STONE_SLAB.get(), blockEndLoc(KnickKnacksBlockRegistry.POLISHED_END_STONE), blockEndLoc(KnickKnacksBlockRegistry.POLISHED_END_STONE));
         stairsBlock((StairBlock) KnickKnacksBlockRegistry.POLISHED_END_STONE_STAIRS.get(), blockEndLoc(KnickKnacksBlockRegistry.POLISHED_END_STONE));
@@ -72,6 +74,10 @@ public class KnickKnacksBlocksStateProvider extends BlockStateProvider{
 
         simpleBlock(KnickKnacksBlockRegistry.END_SANDSTONE_BRICKS.get());
         simpleBlock(KnickKnacksBlockRegistry.CRACKED_END_SANDSTONE_BRICKS.get());
+        wallBlock(KnickKnacksBlockRegistry.END_SANDSTONE_BRICK_WALL, blockEndLoc(KnickKnacksBlockRegistry.END_SANDSTONE));
+        stairsBlock(KnickKnacksBlockRegistry.END_SANDSTONE_BRICK_STAIRS.get(), blockEndLoc(KnickKnacksBlockRegistry.END_SANDSTONE));
+        slabBlock(KnickKnacksBlockRegistry.END_SANDSTONE_BRICK_SLAB.get(), blockEndLoc(KnickKnacksBlockRegistry.END_SANDSTONE),blockEndLoc(KnickKnacksBlockRegistry.END_SANDSTONE), blockEndLoc(KnickKnacksBlockRegistry.END_SANDSTONE, "bottom"), blockEndLoc(KnickKnacksBlockRegistry.SMOOTH_END_SANDSTONE));
+
         axisBlock(KnickKnacksBlockRegistry.END_SANDSTONE_PILLAR.get(), blockEndLoc(KnickKnacksBlockRegistry.END_SANDSTONE_PILLAR), blockEndLoc(KnickKnacksBlockRegistry.END_SANDSTONE_PILLAR, "top"));
 
         simpleBlock(KnickKnacksBlockRegistry.SMOOTH_END_SANDSTONE.get());

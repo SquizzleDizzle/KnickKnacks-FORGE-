@@ -1,0 +1,11 @@
+{
+  "variants": {
+    "vertical_direction=down": {
+      "model": "knick_knacks:block/obsidian_embedded_endstone",
+      "x": 180
+    },
+    "vertical_direction=up": {
+      "model": "knick_knacks:block/obsidian_embedded_endstone"
+    }
+  }
+}

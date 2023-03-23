@@ -147,6 +147,14 @@ public class KnickKnacksBlockRegistry {
     public static final RegistryObject<Block> END_SANDSTONE_BRICKS = registerBlock("end_sandstone_bricks",
             () -> new EndSandStoneBlock(BlockBehaviour.Properties.of(Material.ICE)
                     .strength(3f).sound(SoundType.STONE)), KnickKnacksTabRegistry.TAB);
+    public static final RegistryObject<WallBlock> END_SANDSTONE_BRICK_WALL = registerBlock("end_sandstone_brick_wall",
+            () -> new WallBlock(BlockBehaviour.Properties.copy(END_SANDSTONE.get())), KnickKnacksTabRegistry.TAB);
+    public static final RegistryObject<SlabBlock> END_SANDSTONE_BRICK_SLAB = registerBlock("end_sandstone_brick_slab",
+            () -> new SlabBlock(BlockBehaviour.Properties.of(Material.STONE, MaterialColor.SAND)
+                    .strength(0.5f)), KnickKnacksTabRegistry.TAB);
+    public static final RegistryObject<StairBlock> END_SANDSTONE_BRICK_STAIRS = registerBlock("end_sandstone_brick_stairs",
+            () -> new  StairBlock(END_SANDSTONE.get().defaultBlockState(), BlockBehaviour.Properties.copy(END_SANDSTONE.get())), KnickKnacksTabRegistry.TAB);
+
     public static final RegistryObject<Block> CRACKED_END_SANDSTONE_BRICKS = registerBlock("cracked_end_sandstone_bricks",
             () -> new EndSandStoneBlock(BlockBehaviour.Properties.of(Material.ICE)
                     .strength(3f).sound(SoundType.STONE)), KnickKnacksTabRegistry.TAB);
@@ -193,6 +201,10 @@ public class KnickKnacksBlockRegistry {
 
     public static final RegistryObject<Block> FROZEN_ENDSTONE = registerBlock("frozen_end_stone",
             () -> new EndSandStoneBlock(BlockBehaviour.Properties.of(Material.GRASS)
+                    .strength(3f).sound(SoundType.STONE)), KnickKnacksTabRegistry.TAB);
+
+    public static final RegistryObject<Block> OBSIDIAN_EMBEDDED_ENDSTONE = registerBlock("obsidian_embedded_endstone",
+            () -> new EndSandStoneBlock(BlockBehaviour.Properties.of(Material.STONE)
                     .strength(3f).sound(SoundType.STONE)), KnickKnacksTabRegistry.TAB);
 
 
