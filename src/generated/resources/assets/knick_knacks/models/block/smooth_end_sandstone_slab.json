@@ -1,8 +1,8 @@
 {
-  "parent": "minecraft:block/stairs",
+  "parent": "minecraft:block/slab",
   "textures": {
     "bottom": "knick_knacks:block/smooth_end_sandstone",
-    "side": "knick_knacks:block/cut_end_sandstone",
+    "side": "knick_knacks:block/smooth_end_sandstone",
     "top": "knick_knacks:block/smooth_end_sandstone"
   }
 }

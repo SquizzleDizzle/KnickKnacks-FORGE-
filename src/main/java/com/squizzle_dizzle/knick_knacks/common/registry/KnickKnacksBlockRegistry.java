@@ -144,16 +144,37 @@ public class KnickKnacksBlockRegistry {
             () -> new EndSandStoneBlock(BlockBehaviour.Properties.of(Material.ICE)
                     .strength(3f).sound(SoundType.STONE)), KnickKnacksTabRegistry.TAB);
 
+    public static final RegistryObject<Block> END_SANDSTONE_BRICKS = registerBlock("end_sandstone_bricks",
+            () -> new EndSandStoneBlock(BlockBehaviour.Properties.of(Material.ICE)
+                    .strength(3f).sound(SoundType.STONE)), KnickKnacksTabRegistry.TAB);
+    public static final RegistryObject<Block> CRACKED_END_SANDSTONE_BRICKS = registerBlock("cracked_end_sandstone_bricks",
+            () -> new EndSandStoneBlock(BlockBehaviour.Properties.of(Material.ICE)
+                    .strength(3f).sound(SoundType.STONE)), KnickKnacksTabRegistry.TAB);
+
     public static final RegistryObject<Block> CUT_END_SANDSTONE = registerBlock("cut_end_sandstone",
             () -> new EndSandStoneBlock(BlockBehaviour.Properties.of(Material.ICE)
                     .strength(3f).sound(SoundType.STONE)), KnickKnacksTabRegistry.TAB);
     public static final RegistryObject<Block> SMOOTH_END_SANDSTONE = registerBlock("smooth_end_sandstone",
             () -> new EndSandStoneBlock(BlockBehaviour.Properties.of(Material.ICE)
                     .strength(3f).sound(SoundType.STONE)), KnickKnacksTabRegistry.TAB);
+
+    public static final RegistryObject<RotatedPillarBlock> END_SANDSTONE_PILLAR = registerBlock("end_sandstone_pillar",
+            () -> new PliteBlock(BlockBehaviour.Properties.copy(Blocks.QUARTZ_PILLAR)), KnickKnacksTabRegistry.TAB);
+
+    public static final RegistryObject<WallBlock> SMOOTH_END_SANDSTONE_WALL = registerBlock("smooth_end_sandstone_wall",
+            () -> new WallBlock(BlockBehaviour.Properties.copy(END_SANDSTONE.get())), KnickKnacksTabRegistry.TAB);
+    public static final RegistryObject<SlabBlock> SMOOTH_END_SANDSTONE_SLAB = registerBlock("smooth_end_sandstone_slab",
+            () -> new SlabBlock(BlockBehaviour.Properties.of(Material.STONE, MaterialColor.SAND)
+                    .strength(0.5f)), KnickKnacksTabRegistry.TAB);
+    public static final RegistryObject<StairBlock> SMOOTH_END_SANDSTONE_STAIRS = registerBlock("smooth_end_sandstone_stairs",
+            () -> new  StairBlock(END_SANDSTONE.get().defaultBlockState(), BlockBehaviour.Properties.copy(END_SANDSTONE.get())), KnickKnacksTabRegistry.TAB);
+
     public static final RegistryObject<Block> SMALL_CHORUS_FLOWER = registerBlock("small_chorus_flower",
             () -> new TallEndGrassBlock(11, 5,BlockBehaviour.Properties.of(Material.REPLACEABLE_PLANT).noCollission().instabreak().sound(SoundType.GRASS).offsetType(BlockBehaviour.OffsetType.XYZ)), KnickKnacksTabRegistry.TAB);
 
     public static final RegistryObject<Block> ERST = registerBlock("erst",
+            () -> new TallEndGrassBlock(13, 2,BlockBehaviour.Properties.of(Material.REPLACEABLE_PLANT).noCollission().instabreak().sound(SoundType.GRASS).offsetType(BlockBehaviour.OffsetType.XYZ)), KnickKnacksTabRegistry.TAB);
+    public static final RegistryObject<Block> FROZEN_ERST = registerBlock("frozen_erst",
             () -> new TallEndGrassBlock(13, 2,BlockBehaviour.Properties.of(Material.REPLACEABLE_PLANT).noCollission().instabreak().sound(SoundType.GRASS).offsetType(BlockBehaviour.OffsetType.XYZ)), KnickKnacksTabRegistry.TAB);
 
     public static final RegistryObject<Block> PONT = registerBlock("pont",

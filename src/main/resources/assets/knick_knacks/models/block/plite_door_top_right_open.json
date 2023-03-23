@@ -1,5 +1,6 @@
 {
   "parent": "block/door_top_right_open",
+  "render_type": "minecraft:cutout",
   "textures": {
     "bottom": "knick_knacks:block/plite_door_bottom",
     "middle": "knick_knacks:block/plite_door_middle",
