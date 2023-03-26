@@ -23,8 +23,7 @@ public class KnickKnacksPlaceFeatureRegistry {
     public static final RegistryObject<PlacedFeature> FROZEN_END_STONE_PATCH_FLOOR = PLACED_FEATURES.register("frozen_end_stone_patch_floor", () -> new PlacedFeature((Holder<ConfiguredFeature<?,?>>)(Holder<? extends ConfiguredFeature<?,?>>) KnickKnacksConfigFeatureRegistry.FROZEN_END_STONE_PATCH_FLOOR, List.of(placementPatch() ,inSquarePlacement(), placementNetherCrystalModifier(), biomeFilter())));
     public static final RegistryObject<PlacedFeature> FROZEN_END_STONE_PATCH_CEILING = PLACED_FEATURES.register("frozen_end_stone_patch_ceiling", () -> new PlacedFeature((Holder<ConfiguredFeature<?,?>>)(Holder<? extends ConfiguredFeature<?,?>>) KnickKnacksConfigFeatureRegistry.FROZEN_END_STONE_PATCH_CEILING, List.of(placementPatch() ,inSquarePlacement(), placementNetherCrystalModifier(), biomeFilter())));
 
-    public static final RegistryObject<PlacedFeature> FROZEN_END_SPRING = PLACED_FEATURES.register("frozen_end_spring", () -> new PlacedFeature((Holder<ConfiguredFeature<?,?>>)(Holder<? extends ConfiguredFeature<?,?>>) KnickKnacksConfigFeatureRegistry.SPRING_FROZEN_END, List.of(placementPatch() ,inSquarePlacement(), placementNetherCrystalModifier(), biomeFilter())));
-    private static CountOnEveryLayerPlacement placement(){
+       private static CountOnEveryLayerPlacement placement(){
         return CountOnEveryLayerPlacement.of(4);
     }
 

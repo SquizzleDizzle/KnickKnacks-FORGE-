@@ -2,8 +2,6 @@ package com.squizzle_dizzle.knick_knacks.common.registry;
 
 import com.squizzle_dizzle.knick_knacks.KnickKnacks;
 import com.squizzle_dizzle.knick_knacks.common.block.EndSandStoneBlock;
-import com.squizzle_dizzle.knick_knacks.common.world.feature.config.AcidRockFeatureConfiguration;
-import com.squizzle_dizzle.knick_knacks.common.world.feature.config.EndFrozenSpringConfig;
 import net.minecraft.core.Direction;
 import net.minecraft.core.Holder;
 import net.minecraft.core.HolderSet;
@@ -37,7 +35,7 @@ public class KnickKnacksConfigFeatureRegistry {
 
     public static final Holder<ConfiguredFeature<VegetationPatchConfiguration, ?>> FROZEN_END_STONE_PATCH_CEILING = FeatureUtils.register("frozen_end_stone_patch_ceiling", Feature.VEGETATION_PATCH, new VegetationPatchConfiguration(KnickKnacksTagRegistry.Blocks.END_GRASS_PLACEABLE, BlockStateProvider.simple(KnickKnacksBlockRegistry.FROZEN_ENDSTONE.get().defaultBlockState().setValue(EndSandStoneBlock.UP_DOWN ,Direction.DOWN)), PlacementUtils.inlinePlaced(ERST_VEGETATION) , CaveSurface.CEILING, UniformInt.of(1, 1), 0.0F, 5, 0.08F, UniformInt.of(10, 20), 0.3F));
 
-    public static final Holder<ConfiguredFeature<EndFrozenSpringConfig, ?>> SPRING_FROZEN_END = registerConfiguredFeature("spring_frozen_end", KnickKnacksFeatureRegistry.END_FROZEN_SPRING.get(), new EndFrozenSpringConfig(KnickKnacksBlockRegistry.END_ICE.get().defaultBlockState(), false, 4, 1, HolderSet.direct(Block::builtInRegistryHolder)));
+
     public static <FC extends FeatureConfiguration, F extends Feature<FC>> Holder<ConfiguredFeature<FC, ?>> registerConfiguredFeature(String name, F feature, FC featureConfiguration) {
         ResourceLocation resourceLocation = new ResourceLocation(KnickKnacks.MOD_ID, name);
         if (BuiltinRegistries.CONFIGURED_FEATURE.keySet().contains(resourceLocation)) {

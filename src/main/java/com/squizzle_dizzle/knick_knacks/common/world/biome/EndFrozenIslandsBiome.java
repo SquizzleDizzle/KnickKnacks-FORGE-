@@ -9,8 +9,7 @@ import net.minecraft.world.level.levelgen.GenerationStep;
 public class EndFrozenIslandsBiome {
     public static Biome make() {
         BiomeGenerationSettings.Builder $$0 = (new BiomeGenerationSettings.Builder())
-                .addFeature(GenerationStep.Decoration.TOP_LAYER_MODIFICATION, KnickKnacksPlaceFeatureRegistry.FROZEN_END_STONE_PATCH_FLOOR.getHolder().get())
-                .addFeature(GenerationStep.Decoration.UNDERGROUND_DECORATION, KnickKnacksPlaceFeatureRegistry.FROZEN_END_SPRING.getHolder().get());
+                .addFeature(GenerationStep.Decoration.TOP_LAYER_MODIFICATION, KnickKnacksPlaceFeatureRegistry.FROZEN_END_STONE_PATCH_FLOOR.getHolder().get());
         MobSpawnSettings.Builder $$1 = new MobSpawnSettings.Builder();
         BiomeDefaultFeatures.addSurfaceFreezing($$0);
         $$0.addFeature(GenerationStep.Decoration.SURFACE_STRUCTURES, EndPlacements.CHORUS_PLANT);

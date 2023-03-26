@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/wall_inventory",
+  "textures": {
+    "wall": "knick_knacks:block/moon_stone_bricks"
+  }
+}

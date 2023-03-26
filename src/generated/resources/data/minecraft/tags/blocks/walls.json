@@ -9,6 +9,15 @@
     "knick_knacks:end_sandstone_wall",
     "knick_knacks:cut_end_sandstone_wall",
     "knick_knacks:smooth_end_sandstone_wall",
-    "knick_knacks:end_sandstone_brick_wall"
+    "knick_knacks:end_sandstone_brick_wall",
+    "knick_knacks:circle_stone_wall",
+    "knick_knacks:moon_stone_wall",
+    "knick_knacks:scratch_stone_wall",
+    "knick_knacks:polished_circle_stone_wall",
+    "knick_knacks:polished_moon_stone_wall",
+    "knick_knacks:polished_scratch_stone_wall",
+    "knick_knacks:circle_stone_brick_wall",
+    "knick_knacks:moon_stone_brick_wall",
+    "knick_knacks:scratch_stone_brick_wall"
   ]
 }

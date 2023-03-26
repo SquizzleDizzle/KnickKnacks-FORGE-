@@ -1,5 +1,5 @@
 {
-  "parent": "knick_knacks:/door_middle_left_open",
+  "parent": "knick_knacks:block/door_middle_left_open",
   "textures": {
     "bottom": "knick_knacks:block/plite_door_bottom",
     "middle": "knick_knacks:block/plite_door_middle",

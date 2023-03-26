@@ -262,16 +262,26 @@ public class KnickKnacksBlockRegistry {
     public static final RegistryObject<Block> MOON_STONE = registerBlock("moon_stone",
             () -> new Block(BlockBehaviour.Properties.of(Material.ICE)
                     .strength(3f).sound(SoundType.STONE)), KnickKnacksTabRegistry.TAB);
-    public static final RegistryObject<Block> MOON_STONE_STAIRS = registerBlock("moon_stone_stairs",
+    public static final RegistryObject<Block> MOON_STONE_BRICKS = registerBlock("moon_stone_bricks",
+            () -> new Block(BlockBehaviour.Properties.of(Material.ICE)
+                    .strength(3f).sound(SoundType.STONE)), KnickKnacksTabRegistry.TAB);
+    public static final RegistryObject<StairBlock> MOON_STONE_BRICK_STAIRS = registerBlock("moon_stone_brick_stairs",
             () -> new  StairBlock(DARK_PURPUR_BLOCK.get().defaultBlockState(), BlockBehaviour.Properties.copy(DARK_PURPUR_BLOCK.get())), KnickKnacksTabRegistry.TAB);
 
-    public static final RegistryObject<Block> MOON_STONE_SLAB = registerBlock("moon_stone_slab",
+    public static final RegistryObject<StairBlock> MOON_STONE_STAIRS = registerBlock("moon_stone_stairs",
+            () -> new  StairBlock(DARK_PURPUR_BLOCK.get().defaultBlockState(), BlockBehaviour.Properties.copy(DARK_PURPUR_BLOCK.get())), KnickKnacksTabRegistry.TAB);
+    public static final RegistryObject<SlabBlock> MOON_STONE_BRICK_SLAB = registerBlock("moon_stone_brick_slab",
             () -> new SlabBlock(BlockBehaviour.Properties.of(Material.STONE, MaterialColor.SAND)
                     .strength(0.5f)), KnickKnacksTabRegistry.TAB);
+    public static final RegistryObject<SlabBlock> MOON_STONE_SLAB = registerBlock("moon_stone_slab",
+            () -> new SlabBlock(BlockBehaviour.Properties.of(Material.STONE, MaterialColor.SAND)
+                    .strength(0.5f)), KnickKnacksTabRegistry.TAB);
+    public static final RegistryObject<WallBlock> MOON_STONE_BRICK_WALL = registerBlock("moon_stone_brick_wall",
+            () -> new WallBlock(BlockBehaviour.Properties.copy(DARK_PURPUR_BLOCK.get())), KnickKnacksTabRegistry.TAB);
     public static final RegistryObject<WallBlock> MOON_STONE_WALL = registerBlock("moon_stone_wall",
             () -> new WallBlock(BlockBehaviour.Properties.copy(DARK_PURPUR_BLOCK.get())), KnickKnacksTabRegistry.TAB);
 
-    public static final RegistryObject<Block> CRACKED_MOON_STONE = registerBlock("cracked_moon_stone",
+    public static final RegistryObject<Block> CRACKED_MOON_STONE_BRICKS = registerBlock("cracked_moon_stone_bricks",
             () -> new Block(BlockBehaviour.Properties.of(Material.STONE)
                     .strength(3f).sound(SoundType.STONE)), KnickKnacksTabRegistry.TAB);
     public static final RegistryObject<RotatedPillarBlock> MOON_STONE_PILLAR = registerBlock("moon_stone_pillar", () -> new RotatedPillarBlock(BlockBehaviour.Properties.of(Material.STONE, MaterialColor.COLOR_MAGENTA).requiresCorrectToolForDrops().strength(1.5F, 6.0F)), KnickKnacksTabRegistry.TAB);
@@ -284,10 +294,10 @@ public class KnickKnacksBlockRegistry {
             () -> new Block(BlockBehaviour.Properties.of(Material.STONE)
                     .strength(3f).sound(SoundType.STONE)), KnickKnacksTabRegistry.TAB);
 
-    public static final RegistryObject<Block> POLISHED_MOON_STONE_STAIRS = registerBlock("polished_moon_stone_stairs",
+    public static final RegistryObject<StairBlock> POLISHED_MOON_STONE_STAIRS = registerBlock("polished_moon_stone_stairs",
             () -> new  StairBlock(POLISHED_DARK_PURPUR.get().defaultBlockState(), BlockBehaviour.Properties.copy(POLISHED_DARK_PURPUR.get())), KnickKnacksTabRegistry.TAB);
 
-    public static final RegistryObject<Block> POLISHED_MOON_STONE_SLAB = registerBlock("polished_moon_stone_slab",
+    public static final RegistryObject<SlabBlock> POLISHED_MOON_STONE_SLAB = registerBlock("polished_moon_stone_slab",
             () -> new SlabBlock(BlockBehaviour.Properties.of(Material.STONE, MaterialColor.SAND)
                     .strength(0.5f)), KnickKnacksTabRegistry.TAB);
     public static final RegistryObject<WallBlock> POLISHED_MOON_STONE_WALL = registerBlock("polished_moon_stone_wall",
@@ -296,16 +306,25 @@ public class KnickKnacksBlockRegistry {
     public static final RegistryObject<Block> CIRCLE_STONE = registerBlock("circle_stone",
             () -> new Block(BlockBehaviour.Properties.of(Material.ICE)
                     .strength(3f).sound(SoundType.STONE)), KnickKnacksTabRegistry.TAB);
-    public static final RegistryObject<Block> CIRCLE_STONE_STAIRS = registerBlock("circle_stone_stairs",
+    public static final RegistryObject<Block> CIRCLE_STONE_BRICKS = registerBlock("circle_stone_bricks",
+            () -> new Block(BlockBehaviour.Properties.of(Material.ICE)
+                    .strength(3f).sound(SoundType.STONE)), KnickKnacksTabRegistry.TAB);
+    public static final RegistryObject<StairBlock> CIRCLE_STONE_BRICK_STAIRS = registerBlock("circle_stone_brick_stairs",
             () -> new  StairBlock(DARK_PURPUR_BLOCK.get().defaultBlockState(), BlockBehaviour.Properties.copy(DARK_PURPUR_BLOCK.get())), KnickKnacksTabRegistry.TAB);
-
-    public static final RegistryObject<Block> CIRCLE_STONE_SLAB = registerBlock("circle_stone_slab",
+    public static final RegistryObject<StairBlock> CIRCLE_STONE_STAIRS = registerBlock("circle_stone_stairs",
+            () -> new  StairBlock(DARK_PURPUR_BLOCK.get().defaultBlockState(), BlockBehaviour.Properties.copy(DARK_PURPUR_BLOCK.get())), KnickKnacksTabRegistry.TAB);
+    public static final RegistryObject<SlabBlock> CIRCLE_STONE_BRICK_SLAB = registerBlock("circle_stone_brick_slab",
             () -> new SlabBlock(BlockBehaviour.Properties.of(Material.STONE, MaterialColor.SAND)
                     .strength(0.5f)), KnickKnacksTabRegistry.TAB);
+    public static final RegistryObject<SlabBlock> CIRCLE_STONE_SLAB = registerBlock("circle_stone_slab",
+            () -> new SlabBlock(BlockBehaviour.Properties.of(Material.STONE, MaterialColor.SAND)
+                    .strength(0.5f)), KnickKnacksTabRegistry.TAB);
+    public static final RegistryObject<WallBlock> CIRCLE_STONE_BRICK_WALL = registerBlock("circle_stone_brick_wall",
+            () -> new WallBlock(BlockBehaviour.Properties.copy(DARK_PURPUR_BLOCK.get())), KnickKnacksTabRegistry.TAB);
     public static final RegistryObject<WallBlock> CIRCLE_STONE_WALL = registerBlock("circle_stone_wall",
             () -> new WallBlock(BlockBehaviour.Properties.copy(DARK_PURPUR_BLOCK.get())), KnickKnacksTabRegistry.TAB);
 
-    public static final RegistryObject<Block> CRACKED_CIRCLE_STONE = registerBlock("cracked_circle_stone",
+    public static final RegistryObject<Block> CRACKED_CIRCLE_STONE_BRICKS = registerBlock("cracked_circle_stone_bricks",
             () -> new Block(BlockBehaviour.Properties.of(Material.STONE)
                     .strength(3f).sound(SoundType.STONE)), KnickKnacksTabRegistry.TAB);
     public static final RegistryObject<RotatedPillarBlock> CIRCLE_STONE_PILLAR = registerBlock("circle_stone_pillar", () -> new RotatedPillarBlock(BlockBehaviour.Properties.of(Material.STONE, MaterialColor.COLOR_MAGENTA).requiresCorrectToolForDrops().strength(1.5F, 6.0F)), KnickKnacksTabRegistry.TAB);
@@ -318,10 +337,10 @@ public class KnickKnacksBlockRegistry {
             () -> new Block(BlockBehaviour.Properties.of(Material.STONE)
                     .strength(3f).sound(SoundType.STONE)), KnickKnacksTabRegistry.TAB);
 
-    public static final RegistryObject<Block> POLISHED_CIRCLE_STONE_STAIRS = registerBlock("polished_circle_stone_stairs",
+    public static final RegistryObject<StairBlock> POLISHED_CIRCLE_STONE_STAIRS = registerBlock("polished_circle_stone_stairs",
             () -> new  StairBlock(POLISHED_DARK_PURPUR.get().defaultBlockState(), BlockBehaviour.Properties.copy(POLISHED_DARK_PURPUR.get())), KnickKnacksTabRegistry.TAB);
 
-    public static final RegistryObject<Block> POLISHED_CIRCLE_STONE_SLAB = registerBlock("polished_circle_stone_slab",
+    public static final RegistryObject<SlabBlock> POLISHED_CIRCLE_STONE_SLAB = registerBlock("polished_circle_stone_slab",
             () -> new SlabBlock(BlockBehaviour.Properties.of(Material.STONE, MaterialColor.SAND)
                     .strength(0.5f)), KnickKnacksTabRegistry.TAB);
     public static final RegistryObject<WallBlock> POLISHED_CIRCLE_STONE_WALL = registerBlock("polished_circle_stone_wall",
@@ -330,16 +349,25 @@ public class KnickKnacksBlockRegistry {
     public static final RegistryObject<Block> SCRATCH_STONE = registerBlock("scratch_stone",
             () -> new Block(BlockBehaviour.Properties.of(Material.ICE)
                     .strength(3f).sound(SoundType.STONE)), KnickKnacksTabRegistry.TAB);
-    public static final RegistryObject<Block> SCRATCH_STONE_STAIRS = registerBlock("scratch_stone_stairs",
+    public static final RegistryObject<Block> SCRATCH_STONE_BRICKS = registerBlock("scratch_stone_bricks",
+            () -> new Block(BlockBehaviour.Properties.of(Material.ICE)
+                    .strength(3f).sound(SoundType.STONE)), KnickKnacksTabRegistry.TAB);
+    public static final RegistryObject<StairBlock> SCRATCH_STONE_BRICK_STAIRS = registerBlock("scratch_stone_brick_stairs",
             () -> new  StairBlock(DARK_PURPUR_BLOCK.get().defaultBlockState(), BlockBehaviour.Properties.copy(DARK_PURPUR_BLOCK.get())), KnickKnacksTabRegistry.TAB);
-
-    public static final RegistryObject<Block> SCRATCH_STONE_SLAB = registerBlock("scratch_stone_slab",
+    public static final RegistryObject<StairBlock> SCRATCH_STONE_STAIRS = registerBlock("scratch_stone_stairs",
+            () -> new  StairBlock(DARK_PURPUR_BLOCK.get().defaultBlockState(), BlockBehaviour.Properties.copy(DARK_PURPUR_BLOCK.get())), KnickKnacksTabRegistry.TAB);
+    public static final RegistryObject<SlabBlock> SCRATCH_STONE_BRICK_SLAB = registerBlock("scratch_stone_brick_slab",
             () -> new SlabBlock(BlockBehaviour.Properties.of(Material.STONE, MaterialColor.SAND)
                     .strength(0.5f)), KnickKnacksTabRegistry.TAB);
+    public static final RegistryObject<SlabBlock> SCRATCH_STONE_SLAB = registerBlock("scratch_stone_slab",
+            () -> new SlabBlock(BlockBehaviour.Properties.of(Material.STONE, MaterialColor.SAND)
+                    .strength(0.5f)), KnickKnacksTabRegistry.TAB);
+    public static final RegistryObject<WallBlock> SCRATCH_STONE_BRICK_WALL = registerBlock("scratch_stone_brick_wall",
+            () -> new WallBlock(BlockBehaviour.Properties.copy(DARK_PURPUR_BLOCK.get())), KnickKnacksTabRegistry.TAB);
     public static final RegistryObject<WallBlock> SCRATCH_STONE_WALL = registerBlock("scratch_stone_wall",
             () -> new WallBlock(BlockBehaviour.Properties.copy(DARK_PURPUR_BLOCK.get())), KnickKnacksTabRegistry.TAB);
 
-    public static final RegistryObject<Block> SCRATCH_STONE_STONE = registerBlock("scratch_stone_stone",
+    public static final RegistryObject<Block> CRACKED_SCRATCH_STONE_BRICKS = registerBlock("cracked_scratch_stone_bricks",
             () -> new Block(BlockBehaviour.Properties.of(Material.STONE)
                     .strength(3f).sound(SoundType.STONE)), KnickKnacksTabRegistry.TAB);
     public static final RegistryObject<RotatedPillarBlock> SCRATCH_STONE_PILLAR = registerBlock("scratch_stone_pillar", () -> new RotatedPillarBlock(BlockBehaviour.Properties.of(Material.STONE, MaterialColor.COLOR_MAGENTA).requiresCorrectToolForDrops().strength(1.5F, 6.0F)), KnickKnacksTabRegistry.TAB);
@@ -352,15 +380,20 @@ public class KnickKnacksBlockRegistry {
             () -> new Block(BlockBehaviour.Properties.of(Material.STONE)
                     .strength(3f).sound(SoundType.STONE)), KnickKnacksTabRegistry.TAB);
 
-    public static final RegistryObject<Block> POLISHED_SCRATCH_STONE_STAIRS = registerBlock("polished_scratch_stone_stairs",
+    public static final RegistryObject<StairBlock> POLISHED_SCRATCH_STONE_STAIRS = registerBlock("polished_scratch_stone_stairs",
             () -> new  StairBlock(POLISHED_DARK_PURPUR.get().defaultBlockState(), BlockBehaviour.Properties.copy(POLISHED_DARK_PURPUR.get())), KnickKnacksTabRegistry.TAB);
 
-    public static final RegistryObject<Block> POLISHED_SCRATCH_STONE_SLAB = registerBlock("polished_scratch_stone_slab",
+    public static final RegistryObject<SlabBlock> POLISHED_SCRATCH_STONE_SLAB = registerBlock("polished_scratch_stone_slab",
             () -> new SlabBlock(BlockBehaviour.Properties.of(Material.STONE, MaterialColor.SAND)
                     .strength(0.5f)), KnickKnacksTabRegistry.TAB);
     public static final RegistryObject<WallBlock> POLISHED_SCRATCH_STONE_WALL = registerBlock("polished_scratch_stone_wall",
             () -> new WallBlock(BlockBehaviour.Properties.copy(POLISHED_DARK_PURPUR.get())), KnickKnacksTabRegistry.TAB);
-
+    public static final RegistryObject<Block> LARIMAR_ORE = registerBlock("larimar_ore",
+            () -> new Block(BlockBehaviour.Properties.of(Material.ICE)
+                    .strength(3f).sound(SoundType.STONE)), KnickKnacksTabRegistry.TAB);
+    public static final RegistryObject<Block> LARIMAR_BLOCK = registerBlock("larimar_block",
+            () -> new Block(BlockBehaviour.Properties.of(Material.ICE)
+                    .strength(3f).sound(SoundType.STONE)), KnickKnacksTabRegistry.TAB);
 
     private static <T extends Block> RegistryObject<T> registerBlock(String name, Supplier<T> block, CreativeModeTab tab) {
         RegistryObject<T> toReturn = BLOCKS.register(name, block);

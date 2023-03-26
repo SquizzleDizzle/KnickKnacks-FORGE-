@@ -122,67 +122,57 @@ public class KnickKnacksBlocksStateProvider extends BlockStateProvider{
         simpleBlock(KnickKnacksBlockRegistry.GREEN_ICE.get());
         simpleBlock(KnickKnacksBlockRegistry.PACKED_END_ICE.get());
 
-
-
         simpleBlock(KnickKnacksBlockRegistry.END_SANDSTONE.get(), models().cubeBottomTop(KnickKnacksBlockRegistry.END_SANDSTONE.getId().getPath(), blockEndLoc(KnickKnacksBlockRegistry.END_SANDSTONE), blockEndLoc(KnickKnacksBlockRegistry.END_SANDSTONE, "bottom"), blockEndLoc(KnickKnacksBlockRegistry.SMOOTH_END_SANDSTONE)));
-        /**simpleBlock(KnickKnacksBlockRegistry.DARK_PURPUR.get());
-        slabBlock(KnickKnacksBlockRegistry.DARK_PURPUR_SLAB.get(), blockLoc(KnickKnacksBlockRegistry.DARK_PURPUR), blockLoc(KnickKnacksBlockRegistry.DARK_PURPUR));
-        stairsBlock(KnickKnacksBlockRegistry.DARK_PURPUR_STAIRS.get(), blockLoc(KnickKnacksBlockRegistry.DARK_PURPUR));
-        wallBlock(KnickKnacksBlockRegistry.DARK_PURPUR_WALL, blockLoc(KnickKnacksBlockRegistry.DARK_PURPUR));
 
-        simpleBlock(KnickKnacksBlockRegistry.COBBLED_DARK_PURPUR.get());
-        slabBlock(KnickKnacksBlockRegistry.COBBLED_DARK_PURPUR_SLAB.get(), blockLoc(KnickKnacksBlockRegistry.COBBLED_DARK_PURPUR), blockLoc(KnickKnacksBlockRegistry.COBBLED_DARK_PURPUR));
-        stairsBlock(KnickKnacksBlockRegistry.COBBLED_DARK_PURPUR_STAIRS.get(), blockLoc(KnickKnacksBlockRegistry.COBBLED_DARK_PURPUR));
-        wallBlock(KnickKnacksBlockRegistry.COBBLED_DARK_PURPUR_WALL, blockLoc(KnickKnacksBlockRegistry.COBBLED_DARK_PURPUR));
+        simpleBlock(KnickKnacksBlockRegistry.MOON_STONE.get());
+        simpleBlock(KnickKnacksBlockRegistry.CIRCLE_STONE.get());
+        simpleBlock(KnickKnacksBlockRegistry.SCRATCH_STONE.get());
+        simpleBlock(KnickKnacksBlockRegistry.POLISHED_MOON_STONE.get());
+        simpleBlock(KnickKnacksBlockRegistry.POLISHED_CIRCLE_STONE.get());
+        simpleBlock(KnickKnacksBlockRegistry.POLISHED_SCRATCH_STONE.get());
+        simpleBlock(KnickKnacksBlockRegistry.MOON_STONE_BRICKS.get());
+        simpleBlock(KnickKnacksBlockRegistry.CIRCLE_STONE_BRICKS.get());
+        simpleBlock(KnickKnacksBlockRegistry.SCRATCH_STONE_BRICKS.get());
+        simpleBlock(KnickKnacksBlockRegistry.CRACKED_MOON_STONE_BRICKS.get());
+        simpleBlock(KnickKnacksBlockRegistry.CRACKED_CIRCLE_STONE_BRICKS.get());
+        simpleBlock(KnickKnacksBlockRegistry.CRACKED_SCRATCH_STONE_BRICKS.get());
+        simpleBlock(KnickKnacksBlockRegistry.CHISELED_MOON_STONE.get());
+        simpleBlock(KnickKnacksBlockRegistry.CHISELED_CIRCLE_STONE.get());
+        simpleBlock(KnickKnacksBlockRegistry.CHISELED_SCRATCH_STONE.get());
+        axisBlock(KnickKnacksBlockRegistry.MOON_STONE_PILLAR.get(), blockEndLoc(KnickKnacksBlockRegistry.MOON_STONE_PILLAR), blockEndLoc(KnickKnacksBlockRegistry.MOON_STONE_PILLAR, "top"));
+        axisBlock(KnickKnacksBlockRegistry.CIRCLE_STONE_PILLAR.get(), blockEndLoc(KnickKnacksBlockRegistry.CIRCLE_STONE_PILLAR), blockEndLoc(KnickKnacksBlockRegistry.CIRCLE_STONE_PILLAR, "top"));
+        axisBlock(KnickKnacksBlockRegistry.SCRATCH_STONE_PILLAR.get(), blockEndLoc(KnickKnacksBlockRegistry.SCRATCH_STONE_PILLAR), blockEndLoc(KnickKnacksBlockRegistry.SCRATCH_STONE_PILLAR, "top"));
+        stairsBlock(KnickKnacksBlockRegistry.MOON_STONE_STAIRS.get(), blockEndLoc(KnickKnacksBlockRegistry.MOON_STONE));
+        stairsBlock(KnickKnacksBlockRegistry.CIRCLE_STONE_STAIRS.get(), blockEndLoc(KnickKnacksBlockRegistry.CIRCLE_STONE));
+        stairsBlock(KnickKnacksBlockRegistry.SCRATCH_STONE_STAIRS.get(), blockEndLoc(KnickKnacksBlockRegistry.SCRATCH_STONE));
+        stairsBlock(KnickKnacksBlockRegistry.POLISHED_MOON_STONE_STAIRS.get(), blockEndLoc(KnickKnacksBlockRegistry.POLISHED_MOON_STONE));
+        stairsBlock(KnickKnacksBlockRegistry.POLISHED_CIRCLE_STONE_STAIRS.get(), blockEndLoc(KnickKnacksBlockRegistry.POLISHED_CIRCLE_STONE));
+        stairsBlock(KnickKnacksBlockRegistry.POLISHED_SCRATCH_STONE_STAIRS.get(), blockEndLoc(KnickKnacksBlockRegistry.POLISHED_SCRATCH_STONE));
+        slabBlock(KnickKnacksBlockRegistry.MOON_STONE_SLAB.get(), blockEndLoc(KnickKnacksBlockRegistry.MOON_STONE),blockEndLoc(KnickKnacksBlockRegistry.MOON_STONE), blockEndLoc(KnickKnacksBlockRegistry.MOON_STONE, "bottom"), blockEndLoc(KnickKnacksBlockRegistry.MOON_STONE));
+        slabBlock(KnickKnacksBlockRegistry.CIRCLE_STONE_SLAB.get(), blockEndLoc(KnickKnacksBlockRegistry.CIRCLE_STONE),blockEndLoc(KnickKnacksBlockRegistry.CIRCLE_STONE), blockEndLoc(KnickKnacksBlockRegistry.CIRCLE_STONE, "bottom"), blockEndLoc(KnickKnacksBlockRegistry.CIRCLE_STONE));
+        slabBlock(KnickKnacksBlockRegistry.SCRATCH_STONE_SLAB.get(), blockEndLoc(KnickKnacksBlockRegistry.SCRATCH_STONE),blockEndLoc(KnickKnacksBlockRegistry.SCRATCH_STONE), blockEndLoc(KnickKnacksBlockRegistry.SCRATCH_STONE, "bottom"), blockEndLoc(KnickKnacksBlockRegistry.SCRATCH_STONE));
+        slabBlock(KnickKnacksBlockRegistry.POLISHED_MOON_STONE_SLAB.get(), blockEndLoc(KnickKnacksBlockRegistry.MOON_STONE),blockEndLoc(KnickKnacksBlockRegistry.MOON_STONE), blockEndLoc(KnickKnacksBlockRegistry.MOON_STONE, "bottom"), blockEndLoc(KnickKnacksBlockRegistry.MOON_STONE));
+        slabBlock(KnickKnacksBlockRegistry.POLISHED_CIRCLE_STONE_SLAB.get(), blockEndLoc(KnickKnacksBlockRegistry.CIRCLE_STONE),blockEndLoc(KnickKnacksBlockRegistry.CIRCLE_STONE), blockEndLoc(KnickKnacksBlockRegistry.CIRCLE_STONE, "bottom"), blockEndLoc(KnickKnacksBlockRegistry.CIRCLE_STONE));
+        slabBlock(KnickKnacksBlockRegistry.POLISHED_SCRATCH_STONE_SLAB.get(), blockEndLoc(KnickKnacksBlockRegistry.SCRATCH_STONE),blockEndLoc(KnickKnacksBlockRegistry.SCRATCH_STONE), blockEndLoc(KnickKnacksBlockRegistry.SCRATCH_STONE, "bottom"), blockEndLoc(KnickKnacksBlockRegistry.SCRATCH_STONE));
+        wallBlock(KnickKnacksBlockRegistry.MOON_STONE_WALL, blockEndLoc(KnickKnacksBlockRegistry.MOON_STONE));
+        wallBlock(KnickKnacksBlockRegistry.CIRCLE_STONE_WALL, blockEndLoc(KnickKnacksBlockRegistry.CIRCLE_STONE));
+        wallBlock(KnickKnacksBlockRegistry.SCRATCH_STONE_WALL, blockEndLoc(KnickKnacksBlockRegistry.SCRATCH_STONE));
+        wallBlock(KnickKnacksBlockRegistry.POLISHED_MOON_STONE_WALL, blockEndLoc(KnickKnacksBlockRegistry.MOON_STONE));
+        wallBlock(KnickKnacksBlockRegistry.POLISHED_CIRCLE_STONE_WALL, blockEndLoc(KnickKnacksBlockRegistry.CIRCLE_STONE));
+        wallBlock(KnickKnacksBlockRegistry.POLISHED_SCRATCH_STONE_WALL, blockEndLoc(KnickKnacksBlockRegistry.SCRATCH_STONE));
+        stairsBlock(KnickKnacksBlockRegistry.MOON_STONE_BRICK_STAIRS.get(), blockEndLoc(KnickKnacksBlockRegistry.MOON_STONE_BRICKS));
+        stairsBlock(KnickKnacksBlockRegistry.CIRCLE_STONE_BRICK_STAIRS.get(), blockEndLoc(KnickKnacksBlockRegistry.CIRCLE_STONE_BRICKS));
+        stairsBlock(KnickKnacksBlockRegistry.SCRATCH_STONE_BRICK_STAIRS.get(), blockEndLoc(KnickKnacksBlockRegistry.SCRATCH_STONE_BRICKS));
+        slabBlock(KnickKnacksBlockRegistry.MOON_STONE_BRICK_SLAB.get(), blockEndLoc(KnickKnacksBlockRegistry.MOON_STONE_BRICKS),blockEndLoc(KnickKnacksBlockRegistry.MOON_STONE_BRICKS), blockEndLoc(KnickKnacksBlockRegistry.MOON_STONE_BRICKS, "bottom"), blockEndLoc(KnickKnacksBlockRegistry.MOON_STONE_BRICKS));
+        slabBlock(KnickKnacksBlockRegistry.CIRCLE_STONE_BRICK_SLAB.get(), blockEndLoc(KnickKnacksBlockRegistry.CIRCLE_STONE_BRICKS),blockEndLoc(KnickKnacksBlockRegistry.CIRCLE_STONE_BRICKS), blockEndLoc(KnickKnacksBlockRegistry.CIRCLE_STONE_BRICKS, "bottom"), blockEndLoc(KnickKnacksBlockRegistry.CIRCLE_STONE_BRICKS));
+        slabBlock(KnickKnacksBlockRegistry.SCRATCH_STONE_BRICK_SLAB.get(), blockEndLoc(KnickKnacksBlockRegistry.SCRATCH_STONE_BRICKS),blockEndLoc(KnickKnacksBlockRegistry.SCRATCH_STONE_BRICKS), blockEndLoc(KnickKnacksBlockRegistry.SCRATCH_STONE_BRICKS, "bottom"), blockEndLoc(KnickKnacksBlockRegistry.SCRATCH_STONE_BRICKS));
+        wallBlock(KnickKnacksBlockRegistry.MOON_STONE_BRICK_WALL, blockEndLoc(KnickKnacksBlockRegistry.MOON_STONE_BRICKS));
+        wallBlock(KnickKnacksBlockRegistry.CIRCLE_STONE_BRICK_WALL, blockEndLoc(KnickKnacksBlockRegistry.CIRCLE_STONE_BRICKS));
+        wallBlock(KnickKnacksBlockRegistry.SCRATCH_STONE_BRICK_WALL, blockEndLoc(KnickKnacksBlockRegistry.SCRATCH_STONE_BRICKS));
 
-        simpleBlock(KnickKnacksBlockRegistry.POLISHED_DARK_PURPUR.get());
-        slabBlock(KnickKnacksBlockRegistry.POLISHED_DARK_PURPUR_SLAB.get(), blockLoc(KnickKnacksBlockRegistry.POLISHED_DARK_PURPUR), blockLoc(KnickKnacksBlockRegistry.POLISHED_DARK_PURPUR));
-        stairsBlock(KnickKnacksBlockRegistry.POLISHED_DARK_PURPUR_STAIRS.get(), blockLoc(KnickKnacksBlockRegistry.POLISHED_DARK_PURPUR));
-        wallBlock(KnickKnacksBlockRegistry.POLISHED_DARK_PURPUR_WALL, blockLoc(KnickKnacksBlockRegistry.POLISHED_DARK_PURPUR));
-
-        simpleBlock(KnickKnacksBlockRegistry.DARK_PURPUR_BRICKS.get());
-        slabBlock(KnickKnacksBlockRegistry.DARK_PURPUR_BRICK_SLAB.get(), blockLoc(KnickKnacksBlockRegistry.DARK_PURPUR_BRICKS), blockLoc(KnickKnacksBlockRegistry.DARK_PURPUR_BRICKS));
-        stairsBlock(KnickKnacksBlockRegistry.DARK_PURPUR_BRICK_STAIRS.get(), blockLoc(KnickKnacksBlockRegistry.DARK_PURPUR_BRICKS));
-        wallBlock(KnickKnacksBlockRegistry.DARK_PURPUR_BRICK_WALL, blockLoc(KnickKnacksBlockRegistry.DARK_PURPUR_BRICKS));
-
-        simpleBlock(KnickKnacksBlockRegistry.DARK_PURPUR_COAL_ORE.get());
-        simpleBlock(KnickKnacksBlockRegistry.DARK_PURPUR_IRON_ORE.get());
-        simpleBlock(KnickKnacksBlockRegistry.DARK_PURPUR_COPPER_ORE.get());
-        simpleBlock(KnickKnacksBlockRegistry.DARK_PURPUR_GOLD_ORE.get());
-        simpleBlock(KnickKnacksBlockRegistry.DARK_PURPUR_REDSTONE_ORE.get());
-        simpleBlock(KnickKnacksBlockRegistry.DARK_PURPUR_EMERALD_ORE.get());
-        simpleBlock(KnickKnacksBlockRegistry.DARK_PURPUR_LAPIS_ORE.get());
-        simpleBlock(KnickKnacksBlockRegistry.DARK_PURPUR_DIAMOND_ORE.get());
-
-        simpleBlock(KnickKnacksBlockRegistry.SCULK_VINES.get(), models().cross(KnickKnacksBlockRegistry.SCULK_VINES.getId().getPath(), blockLoc(KnickKnacksBlockRegistry.SCULK_VINES)).renderType("cutout"));
-        simpleBlock(KnickKnacksBlockRegistry.SCULK_VINES_PLANT.get(), models().cross(KnickKnacksBlockRegistry.SCULK_VINES_PLANT.getId().getPath(), blockLoc(KnickKnacksBlockRegistry.SCULK_VINES_PLANT)).renderType("cutout"));
-        simpleBlock(KnickKnacksBlockRegistry.SCULK_TENDRILS.get(), models().cross(KnickKnacksBlockRegistry.SCULK_TENDRILS.getId().getPath(), blockLoc(KnickKnacksBlockRegistry.SCULK_TENDRILS)).renderType("cutout"));
-        simpleBlock(KnickKnacksBlockRegistry.SCULK_TENDRILS_PLANT.get(), models().cross(KnickKnacksBlockRegistry.SCULK_TENDRILS_PLANT.getId().getPath(), blockLoc(KnickKnacksBlockRegistry.SCULK_TENDRILS_PLANT)).renderType("cutout"));
-
-        simpleBlock(KnickKnacksBlockRegistry.PLITE_SOIL.get());
-        simpleBlock(KnickKnacksBlockRegistry.SCULK_GLEAM.get());
-        simpleBlock(KnickKnacksBlockRegistry.INFESTED_SCULK.get());
-
-        simpleBlock(KnickKnacksBlockRegistry.BLOOMING_GRASS_BLOCK.get(), models().cubeBottomTop(KnickKnacksBlockRegistry.BLOOMING_GRASS_BLOCK.getId().getPath(), blockLoc(KnickKnacksBlockRegistry.BLOOMING_GRASS_BLOCK, "side"), blockLoc(KnickKnacksBlockRegistry.DARK_PURPUR), blockLoc(KnickKnacksBlockRegistry.BLOOMING_GRASS_BLOCK)));
-        simpleBlock(KnickKnacksBlockRegistry.BLOOMING_SHRUB.get(), models().cross(KnickKnacksBlockRegistry.BLOOMING_SHRUB.getId().getPath(), blockLoc(KnickKnacksBlockRegistry.BLOOMING_SHRUB)).renderType("cutout"));
-        ConfiguredModel[] berryBushModels = { new ConfiguredModel(models().cross(KnickKnacksBlockRegistry.BLOOM_BERRY_BUSH.getId().getPath() + "_stage0", blockLoc(KnickKnacksBlockRegistry.BLOOM_BERRY_BUSH, "stage0")).renderType("cutout")), new ConfiguredModel(models().cross(KnickKnacksBlockRegistry.BLOOM_BERRY_BUSH.getId().getPath() + "_stage1", blockLoc(KnickKnacksBlockRegistry.BLOOM_BERRY_BUSH, "stage1")).renderType("cutout")), new ConfiguredModel(models().cross(KnickKnacksBlockRegistry.BLOOM_BERRY_BUSH.getId().getPath() + "_stage2", blockLoc(KnickKnacksBlockRegistry.BLOOM_BERRY_BUSH, "stage2")).renderType("cutout")), new ConfiguredModel(models().cross(KnickKnacksBlockRegistry.BLOOM_BERRY_BUSH.getId().getPath() + "_stage3", blockLoc(KnickKnacksBlockRegistry.BLOOM_BERRY_BUSH, "stage3")).renderType("cutout")) };
-        getVariantBuilder(KnickKnacksBlockRegistry.BLOOM_BERRY_BUSH.get()).partialState().with(BloomBerryBushBlock.AGE, 0).setModels(berryBushModels[0]).partialState().with(BloomBerryBushBlock.AGE, 1).setModels(berryBushModels[1]).partialState().with(BloomBerryBushBlock.AGE, 2).setModels(berryBushModels[2]).partialState().with(BloomBerryBushBlock.AGE, 3).setModels(berryBushModels[3]);
-
-        simpleBlock(KnickKnacksBlockRegistry.GLOOM_SCULK.get());
-        simpleBlock(KnickKnacksBlockRegistry.GLOOMSLATE.get());
-        slabBlock(KnickKnacksBlockRegistry.GLOOMSLATE_SLAB.get(), blockLoc(KnickKnacksBlockRegistry.GLOOMSLATE), blockLoc(KnickKnacksBlockRegistry.GLOOMSLATE));
-        stairsBlock(KnickKnacksBlockRegistry.GLOOMSLATE_STAIRS.get(), blockLoc(KnickKnacksBlockRegistry.GLOOMSLATE));
-        wallBlock(KnickKnacksBlockRegistry.GLOOMSLATE_WALL, blockLoc(KnickKnacksBlockRegistry.GLOOMSLATE));
-        simpleBlock(KnickKnacksBlockRegistry.GEYSER.get(), models().cubeTop(KnickKnacksBlockRegistry.GEYSER.getId().getPath(), blockLoc(KnickKnacksBlockRegistry.GLOOM_SCULK), blockLoc(KnickKnacksBlockRegistry.GEYSER)));
-        simpleBlock(KnickKnacksBlockRegistry.CRYSTALLIZED_AMBER.get(), models().withExistingParent(KnickKnacksBlockRegistry.CRYSTALLIZED_AMBER.getId().getPath(), mcLoc("block/honey_block")).texture("particle", blockLoc(KnickKnacksBlockRegistry.CRYSTALLIZED_AMBER, "inner")).texture("down", blockLoc(KnickKnacksBlockRegistry.CRYSTALLIZED_AMBER, "outer")).texture("up", blockLoc(KnickKnacksBlockRegistry.CRYSTALLIZED_AMBER, "inner")).texture("side", blockLoc(KnickKnacksBlockRegistry.CRYSTALLIZED_AMBER, "inner")).renderType("transparent"));
-        simpleBlock(KnickKnacksBlockRegistry.GLOOM_CACTUS.get(), models().withExistingParent(KnickKnacksBlockRegistry.GLOOM_CACTUS.getId().getPath(), modLoc("block/cube_cactus")).texture("side", blockLoc(KnickKnacksBlockRegistry.GLOOM_CACTUS, "side")).texture("top", blockLoc(KnickKnacksBlockRegistry.GLOOM_CACTUS, "top")));
-        simpleBlock(KnickKnacksBlockRegistry.GLOOMY_GRASS.get(), models().cross(KnickKnacksBlockRegistry.GLOOMY_GRASS.getId().getPath(), blockLoc(KnickKnacksBlockRegistry.GLOOMY_GRASS)).renderType("cutout"));
-
-        ConfiguredModel[] sculkJawModels = { new ConfiguredModel(models().cubeAll(KnickKnacksBlockRegistry.SCULK_JAW.getId().getPath() + "_activated", blockLoc(KnickKnacksBlockRegistry.SCULK_JAW, "activated"))), new ConfiguredModel(models().cubeAll(KnickKnacksBlockRegistry.SCULK_JAW.getId().getPath(), blockLoc(KnickKnacksBlockRegistry.SCULK_JAW))) };
-        getVariantBuilder(KnickKnacksBlockRegistry.SCULK_JAW.get()).partialState().with(SculkJawBlock.ACTIVATED, true).setModels(sculkJawModels[0]).partialState().with(SculkJawBlock.ACTIVATED, false).setModels(sculkJawModels[1]);
-
-        simpleBlock(KnickKnacksBlockRegistry.ANCIENT_VASE.get(), models().withExistingParent(KnickKnacksBlockRegistry.ANCIENT_VASE.getId().getPath(), modLoc("block/vase")).texture("vase", blockLoc(KnickKnacksBlockRegistry.ANCIENT_VASE)));
-    **/}
+        simpleBlock(KnickKnacksBlockRegistry.LARIMAR_ORE.get());
+        simpleBlock(KnickKnacksBlockRegistry.LARIMAR_BLOCK.get());
+    }
 
     public void fenceBlock(RegistryObject<FenceBlock> block, ResourceLocation texture) {
         super.fenceBlock(block.get(), texture);

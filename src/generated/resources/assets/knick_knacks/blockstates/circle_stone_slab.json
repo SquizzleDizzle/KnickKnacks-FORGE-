@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "knick_knacks:block/circle_stone_slab"
+    },
+    "type=double": {
+      "model": "knick_knacks:block/circle_stone"
+    },
+    "type=top": {
+      "model": "knick_knacks:block/circle_stone_slab_top"
+    }
+  }
+}
