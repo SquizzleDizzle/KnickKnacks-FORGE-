@@ -37,7 +37,6 @@ public class KnickKnacksBlockLootTables extends BlockLoot {
         this.dropSelf(KnickKnacksBlockRegistry.CRACKED_DARK_PURPUR.get());
         this.dropSelf(KnickKnacksBlockRegistry.CHISELED_DARK_PURPUR.get());
         this.dropSelf(KnickKnacksBlockRegistry.DARK_PURPUR_PILLAR.get());
-        this.dropSelf(KnickKnacksBlockRegistry.END_SAND.get());
         this.dropSelf(KnickKnacksBlockRegistry.END_SANDSTONE.get());
         this.dropSelf(KnickKnacksBlockRegistry.END_SANDSTONE_WALL.get());
         this.dropSelf(KnickKnacksBlockRegistry.END_SANDSTONE_SLAB.get());
